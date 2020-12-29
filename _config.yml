@@ -1,0 +1,12 @@
+title: Stasis
+
+plugins:
+  - jekyll-datapage-generator
+
+page_gen:
+  - data: models
+    name: slug
+    template: model
+  - data: verbatims
+    name: slug
+    template: verbatim

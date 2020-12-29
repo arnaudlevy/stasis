@@ -1,0 +1,17 @@
+---
+title: Modèles
+layout: default
+---
+<h1>Modèles</h1>
+
+<div class="row">
+{% for model in site.data.models %}
+  <div class="col-md-4">
+    <h2 class="mt-5">
+      <a href="/models/{{model.slug}}">{{ model.title }}</a>
+    </h2>
+    <p>{{ model.description }}</p>
+    <p class="small">Source: {{ model.source }}</p>
+  </div>
+{% endfor %}
+</div>

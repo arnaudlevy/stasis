@@ -1,0 +1,16 @@
+- title: Mais n'est ce pas logique de le mettre du coté com et non journaliste?? Nous sommes MMI et IC journaliste??
+  slug: com-journaliste
+  models:
+    oreg: 0 1 0 2
+    kotter: 0 1 1 1
+    collerette: 1 0 1 2
+    brenot: 1 1 0 2 1
+    kanter: 1 1 1 0 0
+- title: Je ne comprends pas “innovation”
+  slug: innovation
+  models:
+    oreg: 2 0 0 2
+    kotter: 0 1 1 0
+    collerette: 0 0 1 2
+    brenot: 2 2 0 1 1
+    kanter: 1 2 2 0 0

@@ -1,0 +1,24 @@
+<div class="small text-center mt-1">
+  <a data-toggle="collapse" href="#details-{{include.id}}" role="button" aria-expanded="false" aria-controls="details-{{include.id}}">
+    Afficher les détails
+  </a>
+</div>
+<div id="details-{{include.id}}" class="collapse">
+  <hr>
+  {% for variable in include.variables %}
+    {% assign value = include.values[forloop.index0] %}
+    <span class="badge badge-primary text-uppercase float-right">
+      {{ value }} •
+      {% if value == '0' %}
+      absence
+      {% elsif value == '1' %}
+      traces
+      {% elsif value == '2' %}
+      présence
+      {% endif %}
+    </span>
+    {{ variable.short }}
+    <p class="small">{{ variable.long }}</p>
+    <hr>
+  {% endfor %}
+</div>

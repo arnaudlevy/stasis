@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<h1>{{page.title}}</h1>
+
+<div class="row">
+{% for model in site.data.models %}
+  {% assign values = page.models[model.slug] | split: ' ' %}
+  <div class="col-md-4 mt-5">
+    <canvas id="chart-{{model.slug}}" height="200"></canvas>
+  	<script>
+  		new Chart('chart-{{model.slug}}', {
+  			type: 'radar',
+        responsive: true,
+  			data: {
+    			labels: {{ model.variables | map: 'short' | jsonify }},
+    			datasets: [{
+    				data: [{{ values | join: ', ' }}],
+            backgroundColor: '000000',
+            borderColor: '000000'
+    			}]
+    		},
+  			options: {
+          legend: {
+            display: false
+          },
+          tooltips: {
+            enabled: false
+          },
+          scale: {
+            ticks: {
+              min: 0,
+              max: 2,
+              stepSize: 1
+            }
+          }
+    		}
+  		});
+  	</script>
+    <h2 class="text-center mt-3">
+      <a href="/models/{{model.slug}}">
+        {{ model.title }}
+      </a>
+    </h2>
+    {% include  table.html
+                variables=model.variables
+                values=values
+                id=model.slug %}
+  </div>
+{% endfor %}
+</div>
