@@ -2,7 +2,6 @@ title: Stasis
 
 plugins:
   - jekyll-datapage-generator
-  - jekyll-gzip
 
 page_gen:
   - data: models
@@ -11,3 +10,6 @@ page_gen:
   - data: verbatims
     name: slug
     template: verbatim
+
+exclude:
+  - README.md
