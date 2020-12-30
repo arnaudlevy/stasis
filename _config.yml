@@ -2,6 +2,7 @@ title: Stasis
 
 plugins:
   - jekyll-datapage-generator
+  - jekyll-gzip
 
 page_gen:
   - data: models
