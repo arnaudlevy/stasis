@@ -1,18 +1,6 @@
-- title: Oreg
-  slug: oreg
-  source: "Oreg, S. (2003). Resistance to change: Developing an individual differences measure."
-  description:
-  variables:
-    - short: Routine
-      long: Recherche de routine
-    - short: Emotion
-      long: Réaction émotionnelle au changement imposé
-    - short: Court-terme
-      long: Concentration sur le court terme
-    - short: Rigidité
-      long: Rigidité cognitive
 - title: Kotter & Schlesinger
-  slug: kotter
+  slug: kotter-schlesinger
+  year: 1979
   source: "Kotter J.P., Schlesinger L.A. et al., Organization : text, cases and readings on the management of organizational design and change, Homewood, Ill., R.D. Irwin, 1979."
   description:
   variables:
@@ -23,37 +11,10 @@
     - short: Peur
       long: Faible tolérance au changement, à cause de la peur de ne pas être capable de développer les compétences et les comportements nouveaux attendus
     - short: Divergence
-      long: N’évaluent le processus de changement de la même manière que leurs managers ou que les initiateurs du projet
-- title: Collerette, Delisle & Perron 
-  slug: collerette
-  source: "Collerette P., Delisle G. et Perron R., Le changement organisationnel : théorie et pratiques, Sainte-Foy, Presses de l’Université du Québec, 1997."
-  description:
-  variables:
-    - short: Peur
-      long: Peur de l’inconnu
-    - short: Perte
-      long: Crainte de perdre ce que l’on possède
-    - short: Compétence
-      long: Remise en cause des compétences
-    - short: Stabilité
-      long: Préférence pour la stabilité
-- title: Brenot & Tuvée
-  slug: brenot
-  source: "Brenot J. et Tuvée J., Le changement dans les organisations, Paris, PUF, 1996, coll. Que sais-je, n° 3114."
-  description:
-  variables:
-    - short: Fermeture
-      long: "Niveau de connaissances, d’éducation et, par là, l’ouverture d’esprit (0: verbatim ouvert, 1: verbatim intermédiaire, 2: verbatim fermé)"
-    - short: Routine
-      long: Aptitudes au changement (volonté de connaissance, créativité, imagination) versus les fonctions routinières
-    - short: Economie
-      long: Raisons économiques (conséquences financières de certains changements, déménagement, achat de voiture pour se déplacer…)
-    - short: Préjugés
-      long: Attitudes, préjugés, esprit de clocher
-    - short: Craintes
-      long: Craintes et conflits, sentiments d’insécurité, de méfiance, de jalousie, de pouvoir interpersonnel, d’intérêt personnel
+      long: N’évaluent pas le processus de changement de la même manière que leurs managers ou que les initiateurs du projet
 - title: Kanter, Stein & Jick
-  slug: kanter
+  slug: kanter-stein-jick
+  year: 1992
   source: "Kanter, R. M., Stein, B., & Jick, T. (Éds.). (1992). The Challenge of organizational change: how companies experience it and leaders guide it. Free Press ; Maxwell Macmillan Canada ; Maxwell Macmillan International."
   description:
   variables:
@@ -67,3 +28,65 @@
       long: Coûts de confusion quand trop de choses changent simultanément, quand trop de routines sont interrompues
     - short: Face
       long: Sentiment de perdre la face quand la nécessité de changer donne aux personnes le sentiment qu’elles sont stupides au regard de leurs actions passées, surtout envers leurs pairs
+- title: Brenot & Tuvée
+  slug: brenot-tuvee
+  year: 1996
+  source: "Brenot J. et Tuvée J., Le changement dans les organisations, Paris, PUF, 1996, coll. Que sais-je, n° 3114."
+  description:
+  variables:
+    - short: Fermeture
+      long: "Niveau de connaissances, d’éducation et, par là, l’ouverture d’esprit (0: verbatim ouvert, 1: verbatim intermédiaire, 2: verbatim fermé)"
+    - short: Routine
+      long: Faible aptitude au changement (volonté de connaissance, créativité, imagination), fonctions routinières privilégiées
+    - short: Economie
+      long: Raisons économiques (conséquences financières de certains changements, déménagement, achat de voiture pour se déplacer…)
+    - short: Préjugés
+      long: Attitudes, préjugés, esprit de clocher
+    - short: Craintes
+      long: Craintes et conflits, sentiments d’insécurité, de méfiance, de jalousie, de pouvoir interpersonnel, d’intérêt personnel
+- title: Collerette, Delisle & Perron 
+  slug: collerette-delisle-perron
+  year: 1997
+  source: "Collerette P., Delisle G. et Perron R., Le changement organisationnel : théorie et pratiques, Sainte-Foy, Presses de l’Université du Québec, 1997."
+  description:
+  variables:
+    - short: Peur
+      long: Peur de l’inconnu
+    - short: Perte
+      long: Crainte de perdre ce que l’on possède
+    - short: Compétence
+      long: Remise en cause des compétences
+    - short: Stabilité
+      long: Préférence pour la stabilité
+- title: Oreg
+  slug: oreg
+  year: 2003
+  source: "Oreg, S. (2003). Resistance to change: Developing an individual differences measure."
+  description:
+  variables:
+    - short: Routine
+      long: Recherche de routine
+    - short: Emotion
+      long: Réaction émotionnelle au changement imposé
+    - short: Court-terme
+      long: Concentration sur le court terme
+    - short: Rigidité
+      long: Rigidité cognitive
+- title: Bareil
+  slug: bareil
+  year: 2004
+  source: "Bareil, C. (2004). Gérer le volet humain du changement: tirer avantage du modèle des 7 phases de préoccupations, agir en fonction des besoins des individus, comprendre autrement la résistance au changement."
+  description:
+  variables:
+    - short: Individu
+      long: Dispositions psychologiques (traits, personnalité), préférence pour la stabilité
+    - short: Collectif
+      long: "Perte des droits acquis et des privilèges: temps de pause, horaires, stationnements, espaces et territoires"
+    - short: Politique
+      long: Pressions politiques, de personnes influentes ou pour soutenir une cause
+    - short: Mise en œuvre
+      long: Causes liées à une mise en œuvre du changement déficiente
+    - short: Système
+      long: Système organisationnel inerte et peu réceptif au changement
+    - short: Changement
+      long: Complexité du changement ou absence de sens

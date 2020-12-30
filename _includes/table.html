@@ -7,16 +7,9 @@
   <hr>
   {% for variable in include.variables %}
     {% assign value = include.values[forloop.index0] %}
-    <span class="badge badge-primary text-uppercase float-right">
-      {{ value }} •
-      {% if value == '0' %}
-      absence
-      {% elsif value == '1' %}
-      traces
-      {% elsif value == '2' %}
-      présence
-      {% endif %}
-    </span>
+    <div class="float-right">
+      {% include badge.html value=value %}
+    </div>
     {{ variable.short }}
     <p class="small">{{ variable.long }}</p>
     <hr>

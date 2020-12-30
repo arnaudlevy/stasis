@@ -1,16 +1,27 @@
-- title: Mais n'est ce pas logique de le mettre du coté com et non journaliste?? Nous sommes MMI et IC journaliste??
+- title: Mais n'est-ce pas logique de le mettre du coté com et non journaliste?? Nous sommes MMI et IC journaliste??
   slug: com-journaliste
   models:
+    kotter-schlesinger: 0 1 1 1
+    kanter-stein-jick: 1 1 1 0 0
+    brenot-tuvee: 1 1 0 2 1
+    collerette-delisle-perron: 1 0 1 2
     oreg: 0 1 0 2
-    kotter: 0 1 1 1
-    collerette: 1 0 1 2
-    brenot: 1 1 0 2 1
-    kanter: 1 1 1 0 0
+    bareil: 1 1 0 0 0 2
 - title: Je ne comprends pas “innovation”
   slug: innovation
   models:
+    kotter-schlesinger: 0 1 1 0
+    kanter-stein-jick: 1 2 2 0 0
+    brenot-tuvee: 2 2 0 1 1
+    collerette-delisle-perron: 0 0 1 2
     oreg: 2 0 0 2
-    kotter: 0 1 1 0
-    collerette: 0 0 1 2
-    brenot: 2 2 0 1 1
-    kanter: 1 2 2 0 0
+    bareil: 1 0 0 0 0 2
+- title: Mais pourquoi on est obligés de suivre cette méthode&nbsp;?
+  slug: pourquoi-obliges
+  models:
+    kotter-schlesinger: 1 2 1 0
+    kanter-stein-jick: 1 1 2 0 0
+    brenot-tuvee: 1 2 0 1 1
+    collerette-delisle-perron: 1 1 1 2
+    oreg: 1 1 0 2
+    bareil: 1 0 1 0 1 2
