@@ -13,9 +13,84 @@ layout: default
 
 <div class="row mt-5">
 {% for variable in page.variables %}
+  {% assign variable_index = forloop.index0 %}
+  {% assign absence = 0 %}
+  {% assign traces = 0 %}
+  {% assign presence = 0 %}
+  {% for verbatim in site.data.verbatims %}
+    {% assign values = verbatim.models[page.slug] | split: ' ' %}
+    {% assign value = values[variable_index] %}
+    {% if value == '0' %}
+      {% assign absence = absence | plus: 1 %}
+    {% elsif value == '1' %}
+      {% assign traces = traces | plus: 1 %}
+    {% elsif value == '2' %}
+      {% assign presence = presence | plus: 1 %}
+    {% endif %}
+  {% endfor %}
   <div class="col-md-4 mt-5">
-    <h2>{{ variable.short }}</h2>
+    <h2 class="mt-4">{{ variable.short }}</h2>
     <p>{{ variable.long }}</p>
+    <canvas id="chart-variable-{{forloop.index0}}" height="40"></canvas>
+    <script>
+      window.addEventListener('load', function () {
+        new Chart('chart-variable-{{forloop.index0}}', {
+          type: 'horizontalBar',
+          data: {
+            labels: ['{{variable.short}}'],
+            datasets: [
+              {
+                label: 'Présence',
+                data: [{{ presence }}],
+                backgroundColor: '#000000'
+              },
+              {
+                label: 'Traces',
+                data: [{{ traces }}],
+                backgroundColor: '#999999'
+              },
+              {
+                label: 'Absence',
+                data: [{{ absence }}],
+                backgroundColor: '#EEEEEE'
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            layout: {
+              padding: 0
+            },
+            legend: {
+              display: false
+            },
+            tooltips: {
+              enabled: false
+            },
+            scales: {
+  						xAxes: [{
+                display: false,
+  							stacked: true,
+                ticks: {
+                  max: {{ presence | plus: traces | plus:absence }}
+                }
+  						}],
+  						yAxes: [{
+                display: false,
+  							stacked: true
+  						}]
+  					}
+          }
+        });
+      });
+    </script>
+
+    <div class="small">
+      <hr>
+      <span class="swatch" style="background: #000000"></span><span class="float-right">{{ presence }}</span>Presence<hr>
+      <span class="swatch" style="background: #999999"></span><span class="float-right">{{ traces }}</span>Traces<hr>
+      <span class="swatch" style="background: #EEEEEE"></span><span class="float-right">{{ absence }}</span>Absence<hr>
+    </div>
   </div>
 {% endfor %}
 </div>
@@ -24,12 +99,11 @@ layout: default
 {% for verbatim in site.data.verbatims %}
   {% assign values = verbatim.models[page.slug] | split: ' ' %}
   <div class="col-md-6 mt-5">
-    <canvas id="chart-{{verbatim.slug}}" height="200" class="mt-4"></canvas>
+    <canvas id="chart-verbatim-{{verbatim.slug}}" height="200" class="mt-4"></canvas>
     <script>
       window.addEventListener('load', function () {
-        new Chart('chart-{{verbatim.slug}}', {
+        new Chart('chart-verbatim-{{verbatim.slug}}', {
           type: 'radar',
-          responsive: true,
           data: {
             labels: {{ page.variables | map: 'short' | jsonify }},
             datasets: [{
@@ -39,6 +113,7 @@ layout: default
             }]
           },
           options: {
+            responsive: true,
             legend: {
               display: false
             },
