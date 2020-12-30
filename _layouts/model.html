@@ -26,32 +26,34 @@ layout: default
   <div class="col-md-6 mt-5">
     <canvas id="chart-{{verbatim.slug}}" height="200" class="mt-4"></canvas>
     <script>
-      new Chart('chart-{{verbatim.slug}}', {
-        type: 'radar',
-        responsive: true,
-        data: {
-          labels: {{ page.variables | map: 'short' | jsonify }},
-          datasets: [{
-            data: [{{ values | join: ', ' }}],
-            backgroundColor: '000000',
-            borderColor: '000000'
-          }]
-        },
-        options: {
-          legend: {
-            display: false
+      window.addEventListener('load', function () {
+        new Chart('chart-{{verbatim.slug}}', {
+          type: 'radar',
+          responsive: true,
+          data: {
+            labels: {{ page.variables | map: 'short' | jsonify }},
+            datasets: [{
+              data: [{{ values | join: ', ' }}],
+              backgroundColor: '000000',
+              borderColor: '000000'
+            }]
           },
-          tooltips: {
-            enabled: false
-          },
-          scale: {
-            ticks: {
-              min: 0,
-              max: 2,
-              stepSize: 1
+          options: {
+            legend: {
+              display: false
+            },
+            tooltips: {
+              enabled: false
+            },
+            scale: {
+              ticks: {
+                min: 0,
+                max: 2,
+                stepSize: 1
+              }
             }
           }
-        }
+        });
       });
     </script>
     <h2 class="text-center mt-3">

@@ -45,33 +45,35 @@ layout: default
   <div class="col-md-4 mt-5">
     <canvas id="chart-{{model.slug}}" height="200"></canvas>
   	<script>
-  		new Chart('chart-{{model.slug}}', {
-  			type: 'radar',
-        responsive: true,
-  			data: {
-    			labels: {{ model.variables | map: 'short' | jsonify }},
-    			datasets: [{
-    				data: [{{ values | join: ', ' }}],
-            backgroundColor: '000000',
-            borderColor: '000000'
-    			}]
-    		},
-  			options: {
-          legend: {
-            display: false
-          },
-          tooltips: {
-            enabled: false
-          },
-          scale: {
-            ticks: {
-              min: 0,
-              max: 2,
-              stepSize: 1
+      window.addEventListener('load', function () {
+    		new Chart('chart-{{model.slug}}', {
+    			type: 'radar',
+          responsive: true,
+    			data: {
+      			labels: {{ model.variables | map: 'short' | jsonify }},
+      			datasets: [{
+      				data: [{{ values | join: ', ' }}],
+              backgroundColor: '000000',
+              borderColor: '000000'
+      			}]
+      		},
+    			options: {
+            legend: {
+              display: false
+            },
+            tooltips: {
+              enabled: false
+            },
+            scale: {
+              ticks: {
+                min: 0,
+                max: 2,
+                stepSize: 1
+              }
             }
-          }
-    		}
-  		});
+      		}
+    		});
+      });
   	</script>
     <h2 class="text-center mt-3">
       <a href="/models/{{model.slug}}">
