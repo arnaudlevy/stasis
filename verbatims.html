@@ -2,12 +2,19 @@
 title: Verbatims
 layout: default
 ---
-<h1>Verbatims</h1>
+<header>
+  <h1>Verbatims</h1>
+</header>
 
 <div class="row">
-{% for verbatim in site.data.verbatims %}
-  <div class="col-md-6">
-    <h2 class="mt-5">
+{% assign verbatims = site.data.verbatims | sort_natural: 'title' %}
+{% for verbatim in verbatims %}
+  <div class="col-md-6 mt-5">
+    <a href="/verbatims/{{verbatim.slug}}">
+      {% include verbatim-badge.html slug=verbatim.slug %}
+    </a>
+    <br>
+    <h2 class="mt-1">
       <a href="/verbatims/{{verbatim.slug}}">{{ verbatim.title }}</a>
     </h2>
   </div>
