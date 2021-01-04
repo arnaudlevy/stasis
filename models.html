@@ -15,6 +15,7 @@ layout: default
     </h2>
     <p>{{ model.description }}</p>
     <p class="small">Source: {{ model.source }}</p>
+    {% include model/adequation.html model=model %}
   </div>
 {% endfor %}
 </div>

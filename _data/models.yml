@@ -9,10 +9,13 @@
       detection: Phrase à la première (je) ou troisième personne indéfinie (on). Pas de mention ou de lien aux métiers, à la mission pédagogique ou aux étudiants. Champ sémantique de l'autonomie, de la liberté, de la contrainte. Mention d'un domaine de prédilection du locuteur. Mention d'enjeux financiers ou liés au confort du locuteur.
     - short: Défiance
       long: Manque de confiance dans les stratèges qui amènent le changement, soit reposant sur la méconnaissance des intentions du changement, soit inspiré par les expériences passées du changement et souvent par l’absence de l’amélioration initialement annoncée
+      detection: Remise en cause directe de la nécessité du changement ou de la pertinence de la méthode. Anticipation de l'échec. Demande d'autonomie et de souplesse. Champ sémantique de la confrontation (gagnant/perdant).
     - short: Peur
       long: Faible tolérance au changement, à cause de la peur de ne pas être capable de développer les compétences et les comportements nouveaux attendus
+      detection: Champ sémantique de l'incompréhension, de la difficulté ou du refus. Ponctuation ou formulation excessive, émotionnelle. Comparaison défavorable avec la situation actuelle. Statu quo ante.
     - short: Divergence
       long: N’évaluent pas le processus de changement de la même manière que leurs managers ou que les initiateurs du projet
+      detection: Champ sémantique de l'organisation, des conditions matérielles de mise en œuvre.
 - title: Kanter, Stein & Jick
   slug: kanter-stein-jick
   year: 1992
@@ -21,10 +24,13 @@
   variables:
     - short: Contrôle
       long: Perte de contrôle
+      detection: Champs sémantiques de l'identité, de la compréhension et de la contrainte. Marqueurs de légitimité
     - short: Incertitude
       long: Trop forte incertitude
+      detection: Champ sémantique de l'organisation. Questions ouvertes, demandes de précisions.
     - short: Information
       long: Manque d’information
+      detection: 
     - short: Confusion
       long: Coûts de confusion quand trop de choses changent simultanément, quand trop de routines sont interrompues
     - short: Face

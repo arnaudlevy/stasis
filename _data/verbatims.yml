@@ -1,7 +1,7 @@
 - title: Mais n'est-ce pas logique de le mettre du coté com et non journaliste&nbsp;?? Nous sommes MMI et IC journaliste&nbsp;??
   slug: 1
   models:
-    kotter-schlesinger: 0 1 1 1
+    kotter-schlesinger: 0 0 1 1
     kanter-stein-jick: 1 1 1 0 0
     brenot-tuvee: 1 1 0 2 1
     collerette-delisle-perron: 1 0 1 2
@@ -19,7 +19,7 @@
 - title: Mais pourquoi on est obligés de suivre cette méthode&nbsp;?
   slug: 3
   models:
-    kotter-schlesinger: 1 2 1 0
+    kotter-schlesinger: 1 2 0 0
     kanter-stein-jick: 1 1 2 0 0
     brenot-tuvee: 1 2 0 1 1
     collerette-delisle-perron: 1 1 1 2
@@ -28,17 +28,17 @@
 - title: Il n'y a pas de communication sans information. Le problème actuel est qu'il y a de l'information sans communication.
   slug: 4
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 0 0
+    kanter-stein-jick: 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
     bareil:
-- title: On entend aussi raconter au sens “web” du terme, non? Storytelling, etc. Le terme est générique, général,  et me semble convenir même s'il m'a étonné au début. Il faudrait presque trouver un mot qui permettrait de résumer “Dire, sur et hors du web”.
+- title: On entend aussi raconter au sens “web” du terme, non? Storytelling, etc. Le terme est générique, général, et me semble convenir même s'il m'a étonné au début. Il faudrait presque trouver un mot qui permettrait de résumer “Dire, sur et hors du web”.
   slug: 5
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 0 0
+    kanter-stein-jick: 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -46,8 +46,8 @@
 - title: Oui, je suis d'accord avec ce que dit Catherine, c'est le sens narratif du mot qui nous ennuie et son acception ici presqu’anglo-saxonne.
   slug: 6
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 0 0 0
+    kanter-stein-jick: 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -55,8 +55,8 @@
 - title: Le terme Innover me semble tout de même assez loin des métiers qui viennent d'être listés.
   slug: 7
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 0 0
+    kanter-stein-jick: 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -64,8 +64,8 @@
 - title: On ne fait rien de ce qu’il y a dans “innovation”
   slug: 8
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 0 2 1
+    kanter-stein-jick: 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -73,8 +73,8 @@
 - title: Est-ce que “Piloter” ou “gérer” ne seraient pas moins ambigus?
   slug: 9
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 0
+    kanter-stein-jick: 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -82,8 +82,8 @@
 - title: "Oui, je suis vraiment d'accord : c'est “gérer”, pas “innover”&nbsp;!"
   slug: 10
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 0 1 0
+    kanter-stein-jick: 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -91,8 +91,8 @@
 - title: Il s'agit plus de “Conduire des innovations" et non d'“Innover”...
   slug: 11
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 0
+    kanter-stein-jick: 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -100,8 +100,8 @@
 - title: "La compétence “Innover” me semble mal nommée puisqu’il s'agit clairement de gestion de projet. Le terme est séduisant et attirant, bien sûr, mais il est loin d’être porteur du contenu. Je militerais pour le changer en : Piloter, Diriger, Organiser, Maîtriser, Administrer.."
   slug: 12
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 0
+    kanter-stein-jick: 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -109,8 +109,8 @@
 - title: Je ne comprends rien à ce que tu viens de dire
   slug: 13
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 0 2 0
+    kanter-stein-jick: 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -118,8 +118,8 @@
 - title: Je me sens complètement dépassée intellectuellement
   slug: 14
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 0 2 0
+    kanter-stein-jick: 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -127,8 +127,8 @@
 - title: Les étudiants ne vont pas comprendre
   slug: 15
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 1 2 0
+    kanter-stein-jick: 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -136,8 +136,8 @@
 - title: Les entreprises ne vont pas comprendre
   slug: 16
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 1 2 0
+    kanter-stein-jick: 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -145,8 +145,8 @@
 - title: Faut-il interpréter “complexe” par “multicompétence” ou par “difficile”?
   slug: 17
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 0 0
+    kanter-stein-jick: 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -154,17 +154,17 @@
 - title: Il s'agit de s'entendre sur la valeur de complexité en fonction des stades d'études?
   slug: 18
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 0 1
+    kanter-stein-jick: 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
     bareil:
-- title: La complexité d’une SAE s’entend au niveau “étudiant” et pas forcément au niveau “enseignant”&nbsp;? Je pense que le niveau de complexité de la SAE doit être en lien avec le niveau de la compétence.  1ère année, on reste au niveau novice…
+- title: La complexité d’une SAE s’entend au niveau “étudiant” et pas forcément au niveau “enseignant”&nbsp;? Je pense que le niveau de complexité de la SAE doit être en lien avec le niveau de la compétence. 1ère année, on reste au niveau novice…
   slug: 19
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 0
+    kanter-stein-jick: 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -172,8 +172,8 @@
 - title: La complexité est associée à l’analyse raisonnée. Est ce juste&nbsp;?
   slug: 20
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 0 0
+    kanter-stein-jick: 0 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -181,8 +181,8 @@
 - title: Sachant que l’on doit démarrer les SAÉ au S1, peut-on vraiment parler de complexité à atteindre si rapidement&nbsp;?
   slug: 21
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 1
+    kanter-stein-jick: 1 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -190,8 +190,8 @@
 - title: "“importance d'avoir des SAE réellement complexes »&nbsp;: en 1ère année, vraiment&nbsp;?"
   slug: 22
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 0
+    kanter-stein-jick: 1 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -199,8 +199,8 @@
 - title: Ce cadre est très contraint et limite l’autonomie pédagogique des équipes. Notamment pour l’évaluation des compétences. Pourquoi cette imposition&nbsp;?
   slug: 23
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 2 0 1
+    kanter-stein-jick: 2 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -208,8 +208,8 @@
 - title: Mais pourquoi on est obligés de suivre cette méthode&nbsp;?
   slug: 24
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 2 0 0
+    kanter-stein-jick: 2 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -217,8 +217,8 @@
 - title: Il faut laisser de la souplesse. C'est la cas actuellement.
   slug: 25
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 1 0 1
+    kanter-stein-jick: 2 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -226,8 +226,8 @@
 - title: Notre organisation tient à dénoncer les conditions inacceptables qu’impose le ministère de l’enseignement supérieur à la création du Bachelor Universitaire Technologique.
   slug: 26
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 2 0 2
+    kanter-stein-jick: 2 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -235,8 +235,8 @@
 - title: Je viens du jeu, et game design, c’est de la conception, pas du discours
   slug: 27
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 0 1 0
+    kanter-stein-jick: 0 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -244,8 +244,8 @@
 - title: Nous sommes un peu surpris que les groupes disciplinaires n'aient pas été mis en place mais nous avons peut-être loupé quelque chose?
   slug: 28
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 0
+    kanter-stein-jick: 1 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -253,17 +253,17 @@
 - title: "[Prénom Nom], 71e section justement: pourquoi raconter et pas communiquer? Raconter fait référence à la fiction."
   slug: 29
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 0 0 0
+    kanter-stein-jick: 1 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
     bareil:
-- title: "Le sens du mot n'est peut-être pas approprié  dans le contexte. Selon le Larousse raconter c'est: 1. Faire oralement ou par écrit  le récit d'évènements ; 2. Dire et rapporter que ; 3. Tenir des propos peu crédibles. Je suis aussi en 71."
+- title: "Le sens du mot n'est peut-être pas approprié dans le contexte. Selon le Larousse raconter c'est: 1. Faire oralement ou par écrit le récit d'évènements ; 2. Dire et rapporter que ; 3. Tenir des propos peu crédibles. Je suis aussi en 71."
   slug: 30
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 0 0 0
+    kanter-stein-jick: 1 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -271,8 +271,8 @@
 - title: La communication est le perdant de ce triple schéma, alors que l'intérêt de former des communicants MMI est qu'ils soient excellents en comm avec les compétences numériques.
   slug: 31
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 1 0 0
+    kanter-stein-jick: 1 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -280,8 +280,8 @@
 - title: Où peut-on travailler le print dans ce schéma&nbsp;?
   slug: 32
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 0 2 1
+    kanter-stein-jick: 2 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -289,8 +289,8 @@
 - title: Et où va le print&nbsp;?
   slug: 33
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 0 2 1
+    kanter-stein-jick: 2 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -298,8 +298,8 @@
 - title: Je trouve “discours” incompréhensible, je préfère “réalisation”
   slug: 34
   models:
-    kotter-schlesinger: 1
-    kanter-stein-jick:
+    kotter-schlesinger: 1 0 1 0
+    kanter-stein-jick: 2 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -307,8 +307,8 @@
 - title: Je n’arrive pas encore à me situer
   slug: 35
   models:
-    kotter-schlesinger: 2
-    kanter-stein-jick:
+    kotter-schlesinger: 2 0 1 0
+    kanter-stein-jick: 2 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -316,8 +316,8 @@
 - title: Oui, mais il n'y a plus forcement un cours “théorique”, on met toujours sur de la pratique
   slug: 36
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 0
+    kanter-stein-jick: 0 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -325,8 +325,8 @@
 - title: Si je comprends bien, il faut comprendre comment être professionnel. La partie “universitaire” semble aller plus vers les licences classiques. On le ressent aussi dans la part de 50% de bac techno
   slug: 37
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 0
+    kanter-stein-jick: 0 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -334,8 +334,8 @@
 - title: Et ça va avec la question du niveau universitaire. Je dois y aller, mais il faudrait qu'on trouve une solution, là.
   slug: 38
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 0
+    kanter-stein-jick: 0 2
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -343,8 +343,8 @@
 - title: Pardon si cette question semble à côté, mais que va-t-on faire de tout ce qui relève du “devenir étudiant”, lorsqu'en première année notamment, on apprend aux étudiant la méthodologie du travail (pas forcément uniquement pro, mais aussi “universitaire”. Faut-il intégrer cela à des situations pros&nbsp;?
   slug: 39
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 1
+    kanter-stein-jick: 1 2
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -352,8 +352,8 @@
 - title: Mais design système, est-ce que c’est le bon terme&nbsp;? Pourquoi ne pas mettre charte graphique&nbsp;? Parce qu’en anglais, parfois, le sens change
   slug: 40
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 0 0
+    kanter-stein-jick: 0 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -361,8 +361,8 @@
 - title: "[dans le contexte d’une datavisualisation interactive, type décodeurs] Interagir avec les données, ça veut dire quoi&nbsp;? Les changer ou les filtrer&nbsp;?"
   slug: 41
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 0 0
+    kanter-stein-jick: 0 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -370,8 +370,8 @@
 - title: Transmédia, ça ne va pas, parfois il n’y a qu’un seul média si un seul parcours sur le BUT doit-on ou peut-on le nommer ce parcours?
   slug: 42
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 0 0
+    kanter-stein-jick: 0 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -379,8 +379,8 @@
 - title: N'y a-t-il pas un risque de réduire une compétence à un cumul d'UE?
   slug: 43
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 0 0
+    kanter-stein-jick: 0 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -388,8 +388,8 @@
 - title: "DPO = Data Protection Officer j'écrirai Protection des données, CRM&nbsp;: Customer Relationship Management, j'écrirai Relation client"
   slug: 44
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 0 0
+    kanter-stein-jick: 0 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -397,8 +397,8 @@
 - title: Développer pour l'Internet sans avoir un apprentissage critique au niveau algorithmique me parait compliqué
   slug: 45
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 0
+    kanter-stein-jick: 1 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -406,17 +406,17 @@
 - title: Un stage fait appel à un ensemble de compétences contribuant à des UE. Du coup comment fera-t-on pour définir les compétences/UE d'un stage par rapport à un autre?
   slug: 46
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 0 1
+    kanter-stein-jick: 1 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
     bareil:
-- title: On saucissonne la note de stage en différentes notes allant alimenter les UE? POur les industriels partenaires, le stage dans son intégrité a une importance, comment vont-ils se retrouver?
+- title: On saucissonne la note de stage en différentes notes allant alimenter les UE? Pour les industriels partenaires, le stage dans son intégrité a une importance, comment vont-ils se retrouver?
   slug: 47
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 0 1 1
+    kanter-stein-jick: 1 1
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -424,8 +424,8 @@
 - title: Construire un référentiel de compétences à partir de métiers existants n'est-il pas sclérosant alors qu'on a conscience de ne pas encore cerner les métiers de demain? quid de l'innovation, de la capacité de nos futurs diplômés à se projeter dans un contexte industriel très mouvant?
   slug: 48
   models:
-    kotter-schlesinger: 0
-    kanter-stein-jick:
+    kotter-schlesinger: 0 2 0 0
+    kanter-stein-jick: 1 2
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
@@ -433,8 +433,8 @@
 - title: Y aura t-il des heures en face des SAE&nbsp;?
   slug: 49
   models:
-    kotter-schlesinger: 2
-    kanter-stein-jick:
+    kotter-schlesinger: 2 1 0 2
+    kanter-stein-jick: 1 2
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:
