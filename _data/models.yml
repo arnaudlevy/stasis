@@ -6,6 +6,7 @@
   variables:
     - short: Individu
       long: L'intérêt individuel prime sur l’intérêt de l’organisation
+      detection: Phrase à la première (je) ou troisième personne indéfinie (on). Pas de mention ou de lien aux métiers, à la mission pédagogique ou aux étudiants. Champ sémantique de l'autonomie, de la liberté, de la contrainte. Mention d'un domaine de prédilection du locuteur. Mention d'enjeux financiers ou liés au confort du locuteur.
     - short: Défiance
       long: Manque de confiance dans les stratèges qui amènent le changement, soit reposant sur la méconnaissance des intentions du changement, soit inspiré par les expériences passées du changement et souvent par l’absence de l’amélioration initialement annoncée
     - short: Peur
