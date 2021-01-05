@@ -3,17 +3,16 @@ layout: default
 ---
 
 <header>
-  {% include verbatim-badge.html slug=page.slug %}
+  {% include verbatim/badge.html slug=page.slug %}
   <h1>{{page.title}}</h1>
 </header>
 
-{% include model/badge.html value='2' %}
 <div class="card-columns card-columns--2 mt-4">
   {% for model in site.data.models %}
     {% assign values = page.models[model.slug] | split: ' ' %}
     {% for variable in model.variables %}
       {% assign value = values[forloop.index0] %}
-        {% if value == '2' %}
+        {% if value != '0' %}
           <div class="card m-0 border-0">
             <h2>{{ variable.long }}</h2>
             <p class="small"><b>{{ variable.short }}</b> • <a href="/models/{{model.slug}}">{{ model.title }}</a></p>
@@ -22,25 +21,6 @@ layout: default
         {% endif %}
     {% endfor %}
   {% endfor %}
-</div>
-
-<div class="mt-5">
-  {% include model/badge.html value='1' %}
-  <div class="card-columns card-columns--3 mt-4">
-  {% for model in site.data.models %}
-    {% assign values = page.models[model.slug] | split: ' ' %}
-    {% for variable in model.variables %}
-      {% assign value = values[forloop.index0] %}
-      {% if value == '1' %}
-        <div class="card m-0 border-0">
-          <p>{{ variable.long }}</p>
-          <p class="small"><b>{{ variable.short }}</b> • <a href="/models/{{model.slug}}">{{ model.title }}</a></p>
-          <hr>
-        </div>
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-  </div>
 </div>
 
 <div class="row mt-5">
@@ -56,7 +36,7 @@ layout: default
           data: {
             labels: {{ model.variables | map: 'short' | jsonify }},
             datasets: [{
-              data: [{{ values | join: ', ' }}],
+              data: [{{ values | join: ', ' | replace: '2', '1' }}],
               backgroundColor: '000000',
               borderColor: '000000'
             }]
@@ -71,8 +51,9 @@ layout: default
             scale: {
               ticks: {
                 min: 0,
-                max: 2,
-                stepSize: 1
+                max: 1,
+                stepSize: 1,
+                display: false
               }
             }
           }
@@ -84,7 +65,7 @@ layout: default
         {{ model.title }}
       </a>
     </h2>
-    {% include  table.html
+    {% include  model/table.html
                 variables=model.variables
                 values=values
                 id=model.slug %}

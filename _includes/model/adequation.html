@@ -4,12 +4,16 @@
 {% for verbatim in site.data.verbatims %}
   {% assign values = verbatim.models[.slug] | split: ' ' %}
   {% for value in values %}
-    {% assign points = points | plus: value %}
+    {% if value != '0' %}
+      {% assign points = points | plus: 1 %}
+    {% endif %}
   {% endfor %}
 {% endfor %}
 {% assign adequation = points | divided_by: variables %}
 
-<div  class="badge badge-light text-uppercase"
-      title="{{ points }} points affectés / {{ variables }} variables">
-  Adéquation {{ adequation adequation}}
+<div>
+  <span class="badge badge-primary text-uppercase">Adéquation {{ adequation }}</span>
+  <p class="small">
+    {{ points }} points / {{ variables }} variables
+  </p>
 </div>

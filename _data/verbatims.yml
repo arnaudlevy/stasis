@@ -14,10 +14,10 @@
     lawrence: 2 0
     kotter-schlesinger: 1 0 0 0
     kanter-stein-jick: 1 0 1 0 0
-    brenot-tuvee:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 1 0 0 0
+    collerette-delisle-perron: 0 0 1 1
+    oreg: 0 0 0 1
+    bareil: 0 0 0 0 0 1
 - title: Ce cadre est très contraint et limite l’autonomie pédagogique des équipes. Notamment pour l’évaluation des compétences. Pourquoi cette imposition&nbsp;?
   slug: 3
   models:
@@ -51,9 +51,9 @@
 - title: Donc le stage n'est pas positionné de la même manière pour tous les étudiants? 
   slug: 6
   models:
-    lawrence:
-    kotter-schlesinger:
-    kanter-stein-jick: 
+    lawrence: 1 0
+    kotter-schlesinger: 0 0 0 0
+    kanter-stein-jick: 0 0 2 1 0
     brenot-tuvee:
     collerette-delisle-perron:
     oreg:

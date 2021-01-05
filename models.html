@@ -10,7 +10,7 @@ layout: default
 {% for model in site.data.models %}
   <div class="col-md-4">
     <h2 class="mt-5">
-      <span class="badge badge-primary float-right">{{ model.year }}</span>
+      <span class="badge float-right">{{ model.year }}</span>
       <a href="/models/{{model.slug}}">{{ model.title }}</a>
     </h2>
     <p>{{ model.description }}</p>

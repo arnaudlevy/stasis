@@ -56,15 +56,20 @@
   description:
   variables:
     - short: Fermeture
-      long: "Niveau de connaissances, d’éducation et, par là, l’ouverture d’esprit (0: verbatim ouvert, 1: verbatim intermédiaire, 2: verbatim fermé)"
+      long: "Niveau de connaissances, d’éducation et, par là, l’ouverture d’esprit"
+      detection:
     - short: Routine
       long: Faible aptitude au changement (volonté de connaissance, créativité, imagination), fonctions routinières privilégiées
+      detection:
     - short: Economie
       long: Raisons économiques (conséquences financières de certains changements, déménagement, achat de voiture pour se déplacer…)
+      detection:
     - short: Préjugés
       long: Attitudes, préjugés, esprit de clocher
+      detection:
     - short: Craintes
       long: Craintes et conflits, sentiments d’insécurité, de méfiance, de jalousie, de pouvoir interpersonnel, d’intérêt personnel
+      detection:
 - title: Collerette, Delisle & Perron 
   slug: collerette-delisle-perron
   year: 1997

@@ -3,7 +3,7 @@ layout: default
 ---
 <header>
   <h1 class="mb-3">{{ page.title }}</h1>
-  <h2><span class="badge badge-primary small">{{ page.year }}</span></h2>
+  <h2><span class="badge">{{ page.year }}</span></h2>
   <div class="row mt-4">
     <div class="offset-md-3 col-md-6 text-center">
       <p class="small">
@@ -25,9 +25,7 @@ layout: default
     {% assign value = values[variable_index] %}
     {% if value == '0' %}
       {% assign absence = absence | plus: 1 %}
-    {% elsif value == '1' %}
-      {% assign traces = traces | plus: 1 %}
-    {% elsif value == '2' %}
+    {% else %}
       {% assign presence = presence | plus: 1 %}
     {% endif %}
   {% endfor %}
@@ -49,11 +47,6 @@ layout: default
                 label: 'Présence',
                 data: [{{ presence }}],
                 backgroundColor: '#000000'
-              },
-              {
-                label: 'Traces',
-                data: [{{ traces }}],
-                backgroundColor: '#999999'
               },
               {
                 label: 'Absence',
@@ -93,7 +86,6 @@ layout: default
     <div class="small">
       <hr>
       <span class="swatch" style="background: #000000"></span><span class="float-right">{{ presence }}</span>Presence<hr>
-      <span class="swatch" style="background: #999999"></span><span class="float-right">{{ traces }}</span>Traces<hr>
       <span class="swatch" style="background: #EEEEEE"></span><span class="float-right">{{ absence }}</span>Absence<hr>
     </div>
   </div>
@@ -114,7 +106,7 @@ layout: default
           data: {
             labels: {{ page.variables | map: 'short' | jsonify }},
             datasets: [{
-              data: [{{ values | join: ', ' }}],
+              data: [{{ values | join: ', ' | replace: '2', '1' }}],
               backgroundColor: '000000',
               borderColor: '000000'
             }]
@@ -130,7 +122,7 @@ layout: default
             scale: {
               ticks: {
                 min: 0,
-                max: 2,
+                max: 1,
                 stepSize: 1
               }
             }
@@ -138,12 +130,17 @@ layout: default
         });
       });
     </script>
-    <h2 class="text-center mt-3">
+    <div class="text-center">
+      <a href="/verbatims/{{verbatim.slug}}">
+        {% include verbatim/badge.html slug=verbatim.slug %}
+      </a>
+    </div>
+    <h2 class="text-center mt-1">
       <a href="/verbatims/{{verbatim.slug}}">
         {{ verbatim.title }}
       </a>
     </h2>
-    {% include table.html variables=page.variables values=values id=verbatim.slug %}
+    {% include model/table.html variables=page.variables values=values id=verbatim.slug %}
   </div>
 {% endfor %}
 </div>

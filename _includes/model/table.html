@@ -7,10 +7,17 @@
   <hr>
   {% for variable in include.variables %}
     {% assign value = include.values[forloop.index0] %}
-    <div class="float-right">
-      {% include model/badge.html value=value %}
-    </div>
+    {% if value == '0' %}
+      <del class="text-muted">
+    {% else %}
+      <b>
+    {% endif %}
     {{ variable.short }}
+    {% if value == '0' %}
+      </del>
+    {% else %}
+      </b>
+    {% endif %}
     <p class="small">{{ variable.long }}</p>
     <hr>
   {% endfor %}
