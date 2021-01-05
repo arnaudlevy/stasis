@@ -1,3 +1,15 @@
+- title: Lawrence
+  slug: lawrence
+  year: 1969
+  source: "Lawrence, P. R., How to Deal With Resistance to Change. Harvard Business Review. 1969"
+  description:
+  variables:
+    - short: Technique
+      long: Changements mesurables de nature technique
+      detection: Question précise. Proposition nuancée.
+    - short: Social
+      long: Changements qui affectent les relations au sein de l'organisation
+      detection: Opinion. Champ sémantique de la contrainte.
 - title: Kotter & Schlesinger
   slug: kotter-schlesinger
   year: 1979
@@ -30,7 +42,7 @@
       detection: Champ sémantique de l'organisation. Questions ouvertes, demandes de précisions.
     - short: Information
       long: Manque d’information
-      detection: 
+      detection:
     - short: Confusion
       long: Coûts de confusion quand trop de choses changent simultanément, quand trop de routines sont interrompues
     - short: Face
