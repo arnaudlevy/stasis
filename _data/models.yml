@@ -36,17 +36,19 @@
   variables:
     - short: Contrôle
       long: Perte de contrôle
-      detection: Champs sémantiques de l'identité, de la compréhension et de la contrainte. Marqueurs de légitimité
+      detection: Champs sémantiques de l'identité, de la compréhension et de la contrainte. Marqueurs de légitimité.
     - short: Incertitude
       long: Trop forte incertitude
-      detection: Champ sémantique de l'organisation. Questions ouvertes, demandes de précisions.
+      detection: Champ sémantique de l'organisation. Questions ouvertes, demandes de précisions sur le déroulement du changement.
     - short: Information
       long: Manque d’information
-      detection:
+      detection: Demandes de précisions sur le contenu.
     - short: Confusion
       long: Coûts de confusion quand trop de choses changent simultanément, quand trop de routines sont interrompues
+      detection: Champ sémantique émotionnel ou ponctuation emphatique. Phrases à la première personne ou troisième personne indéfinie.
     - short: Face
       long: Sentiment de perdre la face quand la nécessité de changer donne aux personnes le sentiment qu’elles sont stupides au regard de leurs actions passées, surtout envers leurs pairs
+      detection: Comparaison aux pratiques antérieures. Focus sur des éléments constitutifs de l'identité.
 - title: Brenot & Tuvée
   slug: brenot-tuvee
   year: 1996
