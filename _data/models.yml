@@ -56,7 +56,7 @@
   description:
   variables:
     - short: Fermeture
-      long: "Niveau de connaissances, d’éducation et, par là, l’ouverture d’esprit"
+      long: "Niveau de connaissances, d’éducation et, par là, d’ouverture d’esprit"
       detection:
     - short: Routine
       long: Faible aptitude au changement (volonté de connaissance, créativité, imagination), fonctions routinières privilégiées

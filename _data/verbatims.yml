@@ -4,10 +4,10 @@
     lawrence: 2 0
     kotter-schlesinger: 0 0 0 0
     kanter-stein-jick: 0 0 2 0 0
-    brenot-tuvee:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 0 0 0 0
+    collerette-delisle-perron: 0 0 0 0
+    oreg: 0 0 0 0
+    bareil: 0 0 0 0 0 0
 - title: "[Prénom Nom], 71e section justement: pourquoi raconter et pas communiquer? Raconter fait référence à la fiction."
   slug: 2
   models:
@@ -24,50 +24,50 @@
     lawrence: 0 2
     kotter-schlesinger: 1 2 0 1
     kanter-stein-jick: 2 2 1 0 0
-    brenot-tuvee:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 2 0 1 1
+    collerette-delisle-perron: 0 1 0 0
+    oreg: 0 0 0 2
+    bareil: 2 2 0 0 1 0
 - title: Ceci veut-il dire qu'il ne faut pas donner de démarche méthodologique?
   slug: 4
   models:
     lawrence: 2 0
     kotter-schlesinger: 0 1 0 0
     kanter-stein-jick: 1 0 2 1 1
-    brenot-tuvee:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 0 0 1 0
+    collerette-delisle-perron: 0 1 1 1
+    oreg: 0 0 0 1
+    bareil: 1 0 0 0 0 0
 - title: Construire un référentiel de compétences à partir de métiers existants n'est-il pas sclérosant alors qu'on a conscience de ne pas encore cerner les métiers de demain? quid de l'innovation, de la capacité de nos futurs diplômés à se projeter dans un contexte industriel très mouvant?
   slug: 5
   models:
     lawrence: 2 0
     kotter-schlesinger: 0 2 0 0
     kanter-stein-jick: 1 2 0 2 0
-    brenot-tuvee:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 0 0 2 1
+    collerette-delisle-perron: 2 0 2 0
+    oreg: 0 0 0 1
+    bareil: 0 0 0 2 2 2
 - title: Donc le stage n'est pas positionné de la même manière pour tous les étudiants? 
   slug: 6
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 0 0
     kanter-stein-jick: 0 0 2 1 0
-    brenot-tuvee:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 0 0 0 0
+    collerette-delisle-perron: 0 0 0 0
+    oreg: 0 0 0 0
+    bareil: 0 0 0 0 1 0
 - title: "DPO = Data Protection Officer j'écrirai Protection des données, CRM&nbsp;: Customer Relationship Management, j'écrirai Relation client"
   slug: 7
   models:
     lawrence: 2 0
     kotter-schlesinger: 0 0 0 0
     kanter-stein-jick: 0 0 2 0 0
-    brenot-tuvee:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 0 0 0 0
+    collerette-delisle-perron: 0 0 0 0
+    oreg: 0 0 0 0
+    bareil: 0 0 0 0 0 0
 - title: Développer pour l'Internet sans avoir un apprentissage critique au niveau algorithmique me parait compliqué
   slug: 8
   models:

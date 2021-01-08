@@ -6,7 +6,7 @@ layout: default
   <h2><span class="badge">{{ page.year }}</span></h2>
   <div class="row mt-4">
     <div class="offset-md-3 col-md-6 text-center">
-      <p class="small">
+      <p>
         Source: {{ page.source }}
       </p>
     </div>
@@ -14,7 +14,9 @@ layout: default
   {% include model/adequation.html model=page %}
 </header>
 
-<div class="row mt-5">
+{% include title.html title="variables du modèle" %}
+
+<div class="row">
 {% for variable in page.variables %}
   {% assign variable_index = forloop.index0 %}
   {% assign absence = 0 %}
@@ -30,69 +32,107 @@ layout: default
     {% endif %}
   {% endfor %}
   <div class="col-md-4 mt-5">
-    <h2 class="mt-4">{{ variable.short }}</h2>
+    <h2>{{ variable.short }}</h2>
     <p>{{ variable.long }}</p>
-    <p class="small">
-      <b>Détection</b> : {{ variable.detection }}
-    </p>
-    <canvas id="chart-variable-{{forloop.index0}}" height="40"></canvas>
-    <script>
-      window.addEventListener('load', function () {
-        new Chart('chart-variable-{{forloop.index0}}', {
-          type: 'horizontalBar',
-          data: {
-            labels: ['{{variable.short}}'],
-            datasets: [
-              {
-                label: 'Présence',
-                data: [{{ presence }}],
-                backgroundColor: '#000000'
-              },
-              {
-                label: 'Absence',
-                data: [{{ absence }}],
-                backgroundColor: '#EEEEEE'
-              }
-            ]
-          },
-          options: {
-            responsive: true,
-            layout: {
-              padding: 0
-            },
-            legend: {
-              display: false
-            },
-            tooltips: {
-              enabled: false
-            },
-            scales: {
-              xAxes: [{
-                display: false,
-                stacked: true,
-                ticks: {
-                  max: {{ presence | plus: traces | plus:absence }}
-                }
-              }],
-              yAxes: [{
-                display: false,
-                stacked: true
-              }]
-            }
-          }
-        });
-      });
-    </script>
-    <div class="small">
-      <hr>
-      <span class="swatch" style="background: #000000"></span><span class="float-right">{{ presence }}</span>Presence<hr>
-      <span class="swatch" style="background: #EEEEEE"></span><span class="float-right">{{ absence }}</span>Absence<hr>
-    </div>
   </div>
 {% endfor %}
 </div>
 
-<hr class="mt-5">
+{% include title.html title="détail des variables" %}
+
+{% for variable in page.variables %}
+  {% assign variable_index = forloop.index0 %}
+  {% assign absence = 0 %}
+  {% assign traces = 0 %}
+  {% assign presence = 0 %}
+  {% for verbatim in site.data.verbatims %}
+    {% assign values = verbatim.models[page.slug] | split: ' ' %}
+    {% assign value = values[variable_index] %}
+    {% if value == '0' %}
+      {% assign absence = absence | plus: 1 %}
+    {% else %}
+      {% assign presence = presence | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  <h2 class="mt-5">{{ variable.short }}</h2>
+  <p>{{ variable.long }}</p>
+  <div class="row">
+    <div class="col-md-4">
+      <p class="mb-1"><b>Détection</b></p>
+      <p class="small">{{ variable.detection }}</p>
+
+      <p class="mt-4 mb-1"><b>Proportions</b></p>
+      <canvas id="chart-variable-{{forloop.index0}}" height="40"></canvas>
+      <script>
+        window.addEventListener('load', function () {
+          new Chart('chart-variable-{{forloop.index0}}', {
+            type: 'horizontalBar',
+            data: {
+              labels: ['{{variable.short}}'],
+              datasets: [
+                {
+                  label: 'Présence',
+                  data: [{{ presence }}],
+                  backgroundColor: '#000000'
+                },
+                {
+                  label: 'Absence',
+                  data: [{{ absence }}],
+                  backgroundColor: '#EEEEEE'
+                }
+              ]
+            },
+            options: {
+              responsive: true,
+              layout: {
+                padding: 0
+              },
+              legend: {
+                display: false
+              },
+              tooltips: {
+                enabled: false
+              },
+              scales: {
+                xAxes: [{
+                  display: false,
+                  stacked: true,
+                  ticks: {
+                    max: {{ presence | plus: traces | plus:absence }}
+                  }
+                }],
+                yAxes: [{
+                  display: false,
+                  stacked: true
+                }]
+              }
+            }
+          });
+        });
+      </script>
+      <div class="small">
+        <hr>
+        <span class="swatch" style="background: #000000"></span><span class="float-right">{{ presence }}</span>Presence<hr>
+        <span class="swatch" style="background: #EEEEEE"></span><span class="float-right">{{ absence }}</span>Absence<hr>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <p class="mb-1"><b>Verbatims</b></p>
+      <ul class="list-unstyled small">
+        {% for verbatim in site.data.verbatims %}
+          {% assign values = verbatim.models[page.slug] | split: ' ' %}
+          {% assign value = values[variable_index] %}
+          {% if value != '0' %}
+            <li class="mb-2">{{ verbatim.title }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endfor %}
+
+{% include title.html title="verbatims" %}
+
 <div class="row mt-5">
 {% assign verbatims = site.data.verbatims | sort_natural: 'title' %}
 {% for verbatim in verbatims %}

@@ -12,8 +12,10 @@
 {% assign adequation = points | divided_by: variables %}
 
 <div>
-  <span class="badge badge-primary text-uppercase">Adéquation {{ adequation }}</span>
+  <p class="badge badge-primary text-uppercase mb-2">
+    Adéquation {{ points }} • {{ adequation }}
+  </p>
   <p class="small">
-    {{ points }} points / {{ variables }} variables
+    {{ points }} points / {{ variables }} variables = {{ adequation }} points / variable
   </p>
 </div>
