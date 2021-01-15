@@ -1,8 +1,7 @@
 - title: Lawrence
   slug: lawrence
   year: 1969
-  source: "Lawrence, P. R., How to Deal With Resistance to Change. Harvard Business Review. 1969"
-  description:
+  source: "Lawrence, P. R. (1969). How to Deal With Resistance to Change. Harvard Business Review."
   variables:
     - short: Technique
       long: Changements mesurables de nature technique
@@ -13,8 +12,7 @@
 - title: Kotter & Schlesinger
   slug: kotter-schlesinger
   year: 1979
-  source: "Kotter J.P., Schlesinger L.A. et al., Organization : text, cases and readings on the management of organizational design and change, Homewood, Ill., R.D. Irwin, 1979."
-  description:
+  source: "Kotter, J.P., Schlesinger, L.A., & al. (1979). Organization : text, cases and readings on the management of organizational design and change."
   variables:
     - short: Individu
       long: L'intérêt individuel prime sur l’intérêt de l’organisation
@@ -31,17 +29,16 @@
 - title: Kanter, Stein & Jick
   slug: kanter-stein-jick
   year: 1992
-  source: "Kanter, R. M., Stein, B., & Jick, T. (Éds.). (1992). The Challenge of organizational change: how companies experience it and leaders guide it. Free Press ; Maxwell Macmillan Canada ; Maxwell Macmillan International."
-  description:
+  source: "Kanter, R. M., Stein, B., & Jick, T. (1992). The Challenge of organizational change: how companies experience it and leaders guide it. Maxwell Macmillan International."
   variables:
     - short: Contrôle
-      long: Perte de contrôle
+      long: Perte de contrôle qui met en exergue que trop de choses sont faites vers les gens et trop peu sont faites par eux
       detection: Champs sémantiques de l'identité, de la compréhension et de la contrainte. Marqueurs de légitimité.
     - short: Incertitude
-      long: Trop forte incertitude
+      long: Trop forte incertitude par manque d’information touchant aux étapes suivantes et aux actions futures
       detection: Champ sémantique de l'organisation. Questions ouvertes, demandes de précisions sur le déroulement du changement.
     - short: Information
-      long: Manque d’information
+      long: Le manque d’information lorsque les décisions sont exposées sans préparation ni background
       detection: Demandes de précisions sur le contenu.
     - short: Confusion
       long: Coûts de confusion quand trop de choses changent simultanément, quand trop de routines sont interrompues
@@ -52,8 +49,7 @@
 - title: Brenot & Tuvée
   slug: brenot-tuvee
   year: 1996
-  source: "Brenot J. et Tuvée J., Le changement dans les organisations, Paris, PUF, 1996, coll. Que sais-je, n° 3114."
-  description:
+  source: "Brenot, J., Tuvée, J. (1996). Le changement dans les organisations. Paris, PUF, coll. Que sais-je, n° 3114."
   variables:
     - short: Fermeture
       long: "Niveau de connaissances, d’éducation et, par là, d’ouverture d’esprit"
@@ -70,11 +66,23 @@
     - short: Craintes
       long: Craintes et conflits, sentiments d’insécurité, de méfiance, de jalousie, de pouvoir interpersonnel, d’intérêt personnel
       detection:
+- title: Carton
+  slug: carton
+  year: 1997
+  source: "Carton, G.D. (1997). Eloge du changement: leviers pour l'accompagnement du changement individuel et professionnel"
+  variables:
+    - short: Inertie
+      long: "L’inertie consiste en une absence de réaction au changement. Les personnes caractérisées par l’inertie laissent entendre qu’elles acceptent le changement, mais tentent d’en différer l’application. L’inertie est rationalisée en évoquant la prudence, en prétendant la nécessité de demander des avis objectifs…"
+    - short: Argumentation
+      long: "L’argumentation est la forme privilégiée de la résistance et constitue la voie royale d’accès à l’intégration du changement. Un changement non argumenté n’est pas intégré. Il s’agit de la forme la plus productive et utile de résistance. L’argumentation peut se concevoir comme une négociation sur le fond et la forme du changement. Elle obéit à un besoin naturel des individus d’influencer la réalité extérieure pour la rapprocher de sa réalité intérieure."
+    - short: Révolte
+      long: "La révolte survient lorsqu’il y a incapacité pour un individu d’ajuster sa réalité à la réalité du changement proposé. L’action syndicale, la demande de mutation, le recours à la hiérarchie, la grève, …, sont autant d’exemples de résistance qui prennent la forme de révolte. La révolte est toujours précédée de menace notamment dans l’argumentation. Il y a la menace tactique (menace de démission) par laquelle on tente d’influencer la représentation que l’autre se fait de la réalité et du changement qu’il propose en évoquant des conséquences qui a priori ne font pas partie de son schéma de changement. Le principe de base du changement étant de produire de façon implicite ou explicite, une amélioration, la menace à pour objet de montrer que le changement risque non pas d’améliorer mais de dégrader la situation."
+    - short: Sabotage
+      long: "Le sabotage est plus pernicieux et manipulateur que la révolte. Il prend souvent la forme d’excès de zèle dont le but est de démontrer la stupidité du changement, d’embarrasser le promoteur du projet. Le sabotage est fonction de la relation hiérarchique et plus généralement du pouvoir qui lie l’individu au promoteur du changement. Il est le reflet d’une soumission apparente ou premier degré et d’une révolte au second degré."
 - title: Collerette, Delisle & Perron 
   slug: collerette-delisle-perron
   year: 1997
-  source: "Collerette P., Delisle G. et Perron R., Le changement organisationnel : théorie et pratiques, Sainte-Foy, Presses de l’Université du Québec, 1997."
-  description:
+  source: "Collerette, P., Delisle, G., Perron, R. (1997). Le changement organisationnel : théorie et pratiques. Sainte-Foy, Presses de l’Université du Québec."
   variables:
     - short: Peur
       long: Peur de l’inconnu
@@ -88,7 +96,6 @@
   slug: oreg
   year: 2003
   source: "Oreg, S. (2003). Resistance to change: Developing an individual differences measure."
-  description:
   variables:
     - short: Routine
       long: Recherche de routine
@@ -102,7 +109,6 @@
   slug: bareil
   year: 2004
   source: "Bareil, C. (2004). Gérer le volet humain du changement: tirer avantage du modèle des 7 phases de préoccupations, agir en fonction des besoins des individus, comprendre autrement la résistance au changement."
-  description:
   variables:
     - short: Individu
       long: Dispositions psychologiques (traits, personnalité), préférence pour la stabilité
