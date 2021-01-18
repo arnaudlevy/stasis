@@ -158,33 +158,33 @@
     lawrence: 1 0
     kotter-schlesinger: 0 0 0 1
     kanter-stein-jick: 0 1 1 0 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 0 0 1 0
+    carton: 0 1 0 0
+    collerette-delisle-perron: 0 0 0 0
+    oreg: 0 0 0 0
+    bareil: 0 0 0 0 0 0
 - title: Il s'agit plus de “Conduire des innovations" et non d'“Innover”...
   slug: 16
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 1 0
     kanter-stein-jick: 0 0 1 1 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 1 1 0 0 1
+    carton: 0 1 0 0
+    collerette-delisle-perron: 1 0 0 1
+    oreg: 1 0 0 1
+    bareil: 0 0 0 0 0 1
 - title: Je me sens complètement dépassée intellectuellement
   slug: 17
   models:
     lawrence: 1 1
     kotter-schlesinger: 1 0 1 0
     kanter-stein-jick: 1 1 1 1 1
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 1 1 0 1 1
+    carton: 0 0 0 0
+    collerette-delisle-perron: 0 1 0 1
+    oreg: 1 0 0 1
+    bareil: 1 0 0 0 0 1
 - title: Je ne comprends pas “innovation”
   slug: 18
   models:
@@ -192,7 +192,7 @@
     kotter-schlesinger: 1 1 1 0
     kanter-stein-jick: 1 1 1 0 0
     brenot-tuvee: 1 1 0 1 1
-    carton:
+    carton: 0 1 0 0
     collerette-delisle-perron: 0 0 1 1
     oreg: 1 0 0 1
     bareil: 1 0 0 0 0 1
@@ -202,22 +202,22 @@
     lawrence: 1 1
     kotter-schlesinger: 1 0 1 0
     kanter-stein-jick: 1 1 1 1 1
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 1 1 0 0 1
+    carton: 0 1 0 0
+    collerette-delisle-perron: 1 1 1 1
+    oreg: 1 0 0 1
+    bareil: 1 0 0 0 0 1
 - title: Je n’arrive pas encore à me situer
   slug: 20
   models:
     lawrence: 0 1
     kotter-schlesinger: 1 0 1 0
     kanter-stein-jick: 1 1 0 1 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 1 0 0 1
+    carton: 1 0 0 0
+    collerette-delisle-perron: 1 1 0 0
+    oreg: 1 0 0 1
+    bareil: 1 0 0 0 0 0
 - title: Je trouve “discours” incompréhensible, je préfère “réalisation”
   slug: 21
   models:
