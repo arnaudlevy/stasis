@@ -7,13 +7,13 @@
   <hr>
   {% for variable in include.variables %}
     {% assign value = include.values[forloop.index0] %}
-    {% if value == '0' %}
+    {% if value != '1' %}
       <del class="text-muted">
     {% else %}
       <b>
     {% endif %}
     {{ variable.short }}
-    {% if value == '0' %}
+    {% if value != '1' %}
       </del>
     {% else %}
       </b>

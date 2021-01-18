@@ -11,47 +11,50 @@ layout: default
       </p>
     </div>
   </div>
-  {% include model/adequation.html model=page %}
 </header>
 
 {% include title.html title="variables du modèle" %}
 
 <div class="row">
+<script type="text/javascript">
+  var values = [];
+</script>
 {% for variable in page.variables %}
   {% assign variable_index = forloop.index0 %}
   {% assign absence = 0 %}
-  {% assign traces = 0 %}
   {% assign presence = 0 %}
   {% for verbatim in site.data.verbatims %}
     {% assign values = verbatim.models[page.slug] | split: ' ' %}
     {% assign value = values[variable_index] %}
-    {% if value == '0' %}
-      {% assign absence = absence | plus: 1 %}
-    {% else %}
+    {% if value == '1' %}
       {% assign presence = presence | plus: 1 %}
+    {% else %}
+      {% assign absence = absence | plus: 1 %}
     {% endif %}
   {% endfor %}
   <div class="col-md-4 mt-5">
     <h2>{{ variable.short }}</h2>
     <p>{{ variable.long }}</p>
+    <script type="text/javascript">
+      values.push({{ presence }});
+    </script>
   </div>
 {% endfor %}
 </div>
 
-{% include title.html title="détail des variables" %}
+{% include title.html title="analyse des variables" %}
 
 {% for variable in page.variables %}
   {% assign variable_index = forloop.index0 %}
   {% assign absence = 0 %}
-  {% assign traces = 0 %}
   {% assign presence = 0 %}
   {% for verbatim in site.data.verbatims %}
     {% assign values = verbatim.models[page.slug] | split: ' ' %}
     {% assign value = values[variable_index] %}
-    {% if value == '0' %}
-      {% assign absence = absence | plus: 1 %}
-    {% else %}
+    {% if value == '1' %}
       {% assign presence = presence | plus: 1 %}
+    {% else %}
+      {% assign absence = absence | plus: 1 %}
     {% endif %}
   {% endfor %}
   <h2 class="mt-5">{{ variable.short }}</h2>
@@ -98,7 +101,7 @@ layout: default
                   display: false,
                   stacked: true,
                   ticks: {
-                    max: {{ presence | plus: traces | plus:absence }}
+                    max: {{ site.data.verbatims | size }}
                   }
                 }],
                 yAxes: [{
@@ -122,7 +125,7 @@ layout: default
         {% for verbatim in site.data.verbatims %}
           {% assign values = verbatim.models[page.slug] | split: ' ' %}
           {% assign value = values[variable_index] %}
-          {% if value != '0' %}
+          {% if value == '1' %}
             <li class="mb-2">{{ verbatim.title }}</li>
           {% endif %}
         {% endfor %}
@@ -130,6 +133,43 @@ layout: default
     </div>
   </div>
 {% endfor %}
+
+{% include title.html title="adéquation" %}
+
+<canvas id="chart-adequation"></canvas>
+<script>
+  window.addEventListener('load', function () {
+    new Chart('chart-adequation', {
+      type: 'radar',
+      data: {
+        labels: {{ page.variables | map: 'short' | jsonify }},
+        datasets: [{
+          data: values,
+          backgroundColor: '000000',
+          borderColor: '000000'
+        }]
+      },
+      options: {
+        responsive: true,
+        legend: {
+          display: false
+        },
+        tooltips: {
+          enabled: false
+        },
+        scale: {
+          ticks: {
+            min: 0,
+            max: {{ site.data.verbatims | size }}
+          }
+        }
+      }
+    });
+  });
+</script>
+<div class="text-center">
+  {% include model/adequation.html model=page %}
+</div>
 
 {% include title.html title="verbatims" %}
 

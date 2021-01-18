@@ -14,7 +14,7 @@ layout: default
     {% assign values = page.models[model.slug] | split: ' ' %}
     {% for variable in model.variables %}
       {% assign value = values[forloop.index0] %}
-        {% if value != '0' %}
+        {% if value == '1' %}
           <div class="card m-0 border-0 mt-3">
             <h2>{{ variable.long }}</h2>
             <p class="small"><b>{{ variable.short }}</b> • <a href="/models/{{model.slug}}">{{ model.title }}</a></p>
@@ -39,7 +39,7 @@ layout: default
           data: {
             labels: {{ model.variables | map: 'short' | jsonify }},
             datasets: [{
-              data: [{{ values | join: ', ' | replace: '2', '1' }}],
+              data: [{{ values | join: ', ' }}],
               backgroundColor: '000000',
               borderColor: '000000'
             }]
