@@ -56,7 +56,7 @@
       detection:
     - short: Routine
       long: Faible aptitude au changement (volonté de connaissance, créativité, imagination), fonctions routinières privilégiées
-      detection:
+      detection: Evocation vague de difficultés à venir.
     - short: Economie
       long: Raisons économiques (conséquences financières de certains changements, déménagement, achat de voiture pour se déplacer…)
       detection:
@@ -73,8 +73,10 @@
   variables:
     - short: Inertie
       long: "L’inertie consiste en une absence de réaction au changement. Les personnes caractérisées par l’inertie laissent entendre qu’elles acceptent le changement, mais tentent d’en différer l’application. L’inertie est rationalisée en évoquant la prudence, en prétendant la nécessité de demander des avis objectifs…"
+      detection: Points de détail ou sujets sans rapport avec le cœur du changement.
     - short: Argumentation
       long: "L’argumentation est la forme privilégiée de la résistance et constitue la voie royale d’accès à l’intégration du changement. Un changement non argumenté n’est pas intégré. Il s’agit de la forme la plus productive et utile de résistance. L’argumentation peut se concevoir comme une négociation sur le fond et la forme du changement. Elle obéit à un besoin naturel des individus d’influencer la réalité extérieure pour la rapprocher de sa réalité intérieure."
+      detection: Manifestation de désaccord, polémique.
     - short: Révolte
       long: "La révolte survient lorsqu’il y a incapacité pour un individu d’ajuster sa réalité à la réalité du changement proposé. L’action syndicale, la demande de mutation, le recours à la hiérarchie, la grève, …, sont autant d’exemples de résistance qui prennent la forme de révolte. La révolte est toujours précédée de menace notamment dans l’argumentation. Il y a la menace tactique (menace de démission) par laquelle on tente d’influencer la représentation que l’autre se fait de la réalité et du changement qu’il propose en évoquant des conséquences qui a priori ne font pas partie de son schéma de changement. Le principe de base du changement étant de produire de façon implicite ou explicite, une amélioration, la menace à pour objet de montrer que le changement risque non pas d’améliorer mais de dégrader la situation."
     - short: Sabotage

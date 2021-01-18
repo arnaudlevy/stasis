@@ -5,7 +5,7 @@
     kotter-schlesinger: 0 0 0 0
     kanter-stein-jick: 0 0 1 0 0
     brenot-tuvee: 0 0 0 0 0
-    carton:
+    carton: 1 2 0 0
     collerette-delisle-perron: 0 0 0 0
     oreg: 0 0 0 0
     bareil: 0 0 0 0 0 0
@@ -16,7 +16,7 @@
     kotter-schlesinger: 1 0 0 0
     kanter-stein-jick: 1 0 1 0 0
     brenot-tuvee: 0 1 0 0 0
-    carton:
+    carton: 0 1 0 0
     collerette-delisle-perron: 0 0 1 1
     oreg: 0 0 0 1
     bareil: 0 0 0 0 0 1
@@ -27,7 +27,7 @@
     kotter-schlesinger: 1 1 0 1
     kanter-stein-jick: 1 1 1 0 0
     brenot-tuvee: 0 1 0 1 1
-    carton:
+    carton: 0 1 0 0
     collerette-delisle-perron: 0 1 0 0
     oreg: 0 0 0 1
     bareil: 1 1 0 0 1 0
@@ -38,7 +38,7 @@
     kotter-schlesinger: 0 1 0 0
     kanter-stein-jick: 1 0 1 1 1
     brenot-tuvee: 0 0 0 1 0
-    carton:
+    carton: 0 1 0 0
     collerette-delisle-perron: 0 1 1 1
     oreg: 0 0 0 1
     bareil: 1 0 0 0 0 0
@@ -49,7 +49,7 @@
     kotter-schlesinger: 0 1 0 0
     kanter-stein-jick: 1 1 0 1 0
     brenot-tuvee: 0 0 0 1 1
-    carton:
+    carton: 1 1 0 0
     collerette-delisle-perron: 1 0 1 0
     oreg: 0 0 0 1
     bareil: 0 0 0 1 1 1
@@ -59,7 +59,7 @@
     lawrence: 1 0
     kotter-schlesinger: 0 0 0 0
     kanter-stein-jick: 0 0 1 1 0
-    carton:
+    carton: 0 1 0 0
     brenot-tuvee: 0 0 0 0 0
     collerette-delisle-perron: 0 0 0 0
     oreg: 0 0 0 0
@@ -71,7 +71,7 @@
     kotter-schlesinger: 0 0 0 0
     kanter-stein-jick: 0 0 1 0 0
     brenot-tuvee: 0 0 0 0 0
-    carton:
+    carton: 1 1 0 0
     collerette-delisle-perron: 0 0 0 0
     oreg: 0 0 0 0
     bareil: 0 0 0 0 0 0
@@ -81,77 +81,77 @@
     lawrence: 1 0
     kotter-schlesinger: 0 0 1 0
     kanter-stein-jick: 1 1 0 1 1
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 1 0 1 0
+    carton: 0 1 0 0
+    collerette-delisle-perron: 1 0 1 0
+    oreg: 1 0 0 1
+    bareil: 1 0 0 0 0 1
 - title: Est-ce que “Piloter” ou “gérer” ne seraient pas moins ambigus?
   slug: 9
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 1 0
     kanter-stein-jick: 0 0 1 0 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 1 1 0 0 0
+    carton: 1 1 0 0
+    collerette-delisle-perron: 1 0 1 0
+    oreg: 1 0 0 1
+    bareil: 1 0 0 0 0 1
 - title: Et où va le print&nbsp;?
   slug: 10
   models:
     lawrence: 1 0
     kotter-schlesinger: 1 0 1 1
     kanter-stein-jick: 1 0 1 1 1
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 1 1 0 0 1
+    carton: 1 1 0 0
+    collerette-delisle-perron: 1 1 0 1
+    oreg: 1 1 0 1
+    bareil: 1 1 0 0 0 0
 - title: Et ça va avec la question du niveau universitaire. Je dois y aller, mais il faudrait qu'on trouve une solution, là.
   slug: 11
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 1 0
     kanter-stein-jick: 0 1 0 1 1
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 1 0 1 1
+    carton: 1 1 0 0
+    collerette-delisle-perron: 0 1 1 1
+    oreg: 1 1 0 1
+    bareil: 1 1 0 0 1 1
 - title: Faut-il interpréter “complexe” par “multicompétence” ou par “difficile”?
   slug: 12
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 0 0
     kanter-stein-jick: 0 0 1 0 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 1 0 0 0 1
+    carton: 0 1 0 0
+    collerette-delisle-perron: 0 0 0 0
+    oreg: 0 0 0 1
+    bareil: 0 0 0 0 0 0
 - title: Il faut laisser de la souplesse. C'est la cas actuellement.
   slug: 13
   models:
     lawrence: 0 1
     kotter-schlesinger: 1 1 0 1
     kanter-stein-jick: 1 0 0 0 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 1 0 0 1
+    carton: 1 1 0 0
+    collerette-delisle-perron: 1 1 0 1
+    oreg: 1 0 0 1
+    bareil: 1 1 0 0 0 0
 - title: Il n'y a pas de communication sans information. Le problème actuel est qu'il y a de l'information sans communication.
   slug: 14
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 0 0
     kanter-stein-jick: 0 0 0 0 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 0 0 0 0
+    carton: 1 0 0 0
+    collerette-delisle-perron: 0 0 0 0
+    oreg: 0 0 0 0
+    bareil: 0 0 0 0 0 0
 - title: Il s'agit de s'entendre sur la valeur de complexité en fonction des stades d'études?
   slug: 15
   models:
