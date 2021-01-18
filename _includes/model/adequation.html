@@ -9,13 +9,13 @@
     {% endif %}
   {% endfor %}
 {% endfor %}
-{% assign adequation = points | divided_by: variables %}
+{% assign adequation = points | times: 1.0 | divided_by: variables %}
 
 <div>
   <p class="badge badge-primary text-uppercase mb-2">
     Adéquation {{ points }} • {{ adequation }}
   </p>
   <p class="small">
-    {{ points }} points / {{ variables }} variables = {{ adequation }} points / variable
+    {{ points }} présences / {{ variables }} variables = {{ adequation }} présences / variable
   </p>
 </div>
