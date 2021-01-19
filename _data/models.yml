@@ -53,7 +53,7 @@
   variables:
     - short: Fermeture
       long: "Niveau de connaissances, d’éducation et, par là, d’ouverture d’esprit"
-      detection:
+      detection: Arguments d'autorité (“Je suis...”).
     - short: Routine
       long: Faible aptitude au changement (volonté de connaissance, créativité, imagination), fonctions routinières privilégiées
       detection: Evocation vague de difficultés à venir.
@@ -88,12 +88,15 @@
   variables:
     - short: Peur
       long: Peur de l’inconnu
+      detection: Remise en cause de l'existence des nouveautés proposées (analyse du futur avec la grille du passé).
     - short: Perte
       long: Crainte de perdre ce que l’on possède
+      detection: Champ lexical de la perte, de la défaite, du regret. Phrases négatives.
     - short: Compétence
       long: Remise en cause des compétences
     - short: Stabilité
       long: Préférence pour la stabilité
+      detection: Remise en cause de la pertinence globale du changement, de la nécessité de changer.
 - title: Oreg
   slug: oreg
   year: 2003
