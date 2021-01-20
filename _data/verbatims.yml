@@ -400,77 +400,77 @@
     lawrence: 1 0
     kotter-schlesinger: 0 0 0 0
     kanter-stein-jick: 0 0 0 0 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 0 0 0 0
+    carton: 0 1 0 0
+    collerette-delisle-perron: 0 0 0 0
+    oreg: 0 0 0 0
+    bareil: 0 0 0 0 0 0
 - title: On ne fait rien de ce qu’il y a dans “innovation”
   slug: 38
   models:
     lawrence: 0 1
     kotter-schlesinger: 1 0 1 1
     kanter-stein-jick: 1 1 0 1 1
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 1 1 0 1 1
+    carton: 0 1 0 0
+    collerette-delisle-perron: 1 1 0 1
+    oreg: 1 0 0 1
+    bareil: 1 0 0 0 0 1
 - title: On saucissonne la note de stage en différentes notes allant alimenter les UE? Pour les industriels partenaires, le stage dans son intégrité a une importance, comment vont-ils se retrouver?
   slug: 39
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 1 1
     kanter-stein-jick: 1 1 1 1 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 1 1 0 1 1
+    carton: 0 1 0 0
+    collerette-delisle-perron: 1 1 0 1
+    oreg: 1 0 0 1
+    bareil: 1 0 0 0 0 1
 - title: Oui, je suis d'accord avec ce que dit [Prénom], c'est le sens narratif du mot qui nous ennuie et son acception ici presqu’anglo-saxonne.
   slug: 40
   models:
     lawrence: 1 0
     kotter-schlesinger: 1 0 0 0
     kanter-stein-jick: 1 0 0 0 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 1 1 0 1 1
+    carton: 0 1 0 0
+    collerette-delisle-perron: 0 1 0 1
+    oreg: 0 1 0 1
+    bareil: 1 0 0 0 0 0
 - title: "Oui, je suis vraiment d'accord : c'est “gérer”, pas “innover”&nbsp;!"
   slug: 41
   models:
     lawrence: 1 0
     kotter-schlesinger: 1 0 1 0
     kanter-stein-jick: 1 0 1 1 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 1 1 0 1 1
+    carton: 0 1 0 0
+    collerette-delisle-perron: 1 1 0 1
+    oreg: 1 1 0 1
+    bareil: 1 0 0 0 0 1
 - title: Oui, mais il n'y a plus forcement un cours “théorique”, on met toujours sur de la pratique
   slug: 42
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 1 0
     kanter-stein-jick: 0 0 1 1 1
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 1 0 0 1
+    carton: 0 1 0 0
+    collerette-delisle-perron: 1 1 0 0
+    oreg: 1 0 0 1
+    bareil: 1 0 0 0 1 1
 - title: Où peut-on travailler le print dans ce schéma&nbsp;?
   slug: 43
   models:
     lawrence: 1 0
     kotter-schlesinger: 1 0 1 1
     kanter-stein-jick: 1 0 1 1 1
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 1 0 0 1
+    carton: 0 1 0 0
+    collerette-delisle-perron: 1 1 0 1
+    oreg: 1 0 0 1
+    bareil: 1 0 0 0 0 0
 - title: Pardon si cette question semble à côté, mais que va-t-on faire de tout ce qui relève du “devenir étudiant”, lorsqu'en première année notamment, on apprend aux étudiant la méthodologie du travail (pas forcément uniquement pro, mais aussi “universitaire”. Faut-il intégrer cela à des situations pros&nbsp;?
   slug: 44
   models:

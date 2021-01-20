@@ -106,6 +106,7 @@
       long: Recherche de routine
     - short: Emotion
       long: Réaction émotionnelle au changement imposé
+      detection: Champ lexical émotionnel (ennui, inquiétude...), emphase.
     - short: Court-terme
       long: Concentration sur le court terme
     - short: Rigidité
