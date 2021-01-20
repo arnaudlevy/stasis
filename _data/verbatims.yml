@@ -471,60 +471,60 @@
     collerette-delisle-perron: 1 1 0 1
     oreg: 1 0 0 1
     bareil: 1 0 0 0 0 0
-- title: Pardon si cette question semble à côté, mais que va-t-on faire de tout ce qui relève du “devenir étudiant”, lorsqu'en première année notamment, on apprend aux étudiant la méthodologie du travail (pas forcément uniquement pro, mais aussi “universitaire”. Faut-il intégrer cela à des situations pros&nbsp;?
+- title: Pardon si cette question semble à côté, mais que va-t-on faire de tout ce qui relève du “devenir étudiant”, lorsqu'en première année notamment, on apprend aux étudiant la méthodologie du travail (pas forcément uniquement pro, mais aussi “universitaire”). Faut-il intégrer cela à des situations pros&nbsp;?
   slug: 44
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 1 1
     kanter-stein-jick: 1 1 1 1 1
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 0 0 0 1
+    carton: 1 0 0 0
+    collerette-delisle-perron: 1 1 0 0
+    oreg: 0 0 0 0
+    bareil: 0 0 0 0 1 0
 - title: Sachant que l’on doit démarrer les SAÉ au S1, peut-on vraiment parler de complexité à atteindre si rapidement&nbsp;?
   slug: 45
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 1 1
     kanter-stein-jick: 1 1 1 0 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 1 1 0 1 1
+    carton: 1 1 0 0
+    collerette-delisle-perron: 1 0 0 1
+    oreg: 1 0 1 1
+    bareil: 1 0 0 0 1 1
 - title: Si je comprends bien, il faut comprendre comment être professionnel. La partie “universitaire” semble aller plus vers les licences classiques. On le ressent aussi dans la part de 50% de bac techno
   slug: 46
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 1 0
     kanter-stein-jick: 0 1 0 1 1
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
-- title: Transmédia, ça ne va pas, parfois il n’y a qu’un seul média si un seul parcours sur le BUT doit-on ou peut-on le nommer ce parcours?
+    brenot-tuvee: 0 0 0 0 1
+    carton: 0 0 0 0
+    collerette-delisle-perron: 0 0 0 0
+    oreg: 0 0 0 0
+    bareil: 0 0 0 0 1 1
+- title: Transmédia, ça ne va pas, parfois il n’y a qu’un seul média
   slug: 47
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 0 0
     kanter-stein-jick: 0 0 1 0 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 0 1 0 1 0
+    carton: 0 1 0 0
+    collerette-delisle-perron: 0 0 0 1
+    oreg: 0 0 0 1
+    bareil: 1 0 0 0 0 0
 - title: Un stage fait appel à un ensemble de compétences contribuant à des UE. Du coup comment fera-t-on pour définir les compétences/UE d'un stage par rapport à un autre?
   slug: 48
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 0 1
     kanter-stein-jick: 1 1 0 0 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
+    brenot-tuvee: 1 1 0 1 1
+    carton: 0 1 0 0
+    collerette-delisle-perron: 1 0 0 0
+    oreg: 1 0 0 1
     bareil:
 - title: Y aura t-il des heures en face des SAE&nbsp;?
   slug: 49
@@ -532,19 +532,19 @@
     lawrence: 1 0
     kotter-schlesinger: 1 1 0 1
     kanter-stein-jick: 1 1 0 1 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
-- title: "“importance d'avoir des SAE réellement complexes »&nbsp;: en 1ère année, vraiment&nbsp;?"
+    brenot-tuvee: 0 0 1 0 1
+    carton: 0 1 0 0
+    collerette-delisle-perron: 0 1 0 0
+    oreg: 0 0 0 0
+    bareil: 0 1 0 0 0 0
+- title: "“importance d'avoir des SAE réellement complexes”&nbsp;: en 1ère année, vraiment&nbsp;?"
   slug: 50
   models:
     lawrence: 1 0
     kotter-schlesinger: 0 0 1 0
     kanter-stein-jick: 1 1 1 0 0
-    brenot-tuvee:
-    carton:
-    collerette-delisle-perron:
-    oreg:
-    bareil:
+    brenot-tuvee: 1 1 0 1 1
+    carton: 0 1 0 0
+    collerette-delisle-perron: 1 0 0 0
+    oreg: 1 0 0 1
+    bareil: 1 0 0 0 1 1

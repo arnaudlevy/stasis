@@ -88,7 +88,7 @@
   variables:
     - short: Peur
       long: Peur de l’inconnu
-      detection: Remise en cause de l'existence des nouveautés proposées (analyse du futur avec la grille du passé).
+      detection: Remise en cause de l'existence ou de la pertinence des nouveautés (analyse du futur avec la grille du passé).
     - short: Perte
       long: Crainte de perdre ce que l’on possède
       detection: Champ lexical de la perte, de la défaite, du regret. Phrases négatives.
