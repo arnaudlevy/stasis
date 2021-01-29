@@ -8,7 +8,7 @@
       detection: Question précise. Proposition nuancée.
     - short: Social
       long: Changements qui affectent les relations au sein de l'organisation
-      detection: Opinion. Champ sémantique de la contrainte.
+      detection: Opinion. Champ sémantique de la contrainte. Marqueurs émotionnels.
 - title: Kotter & Schlesinger
   slug: kotter-schlesinger
   year: 1979
@@ -53,19 +53,19 @@
   variables:
     - short: Fermeture
       long: "Niveau de connaissances, d’éducation et, par là, d’ouverture d’esprit"
-      detection: Arguments d'autorité (“Je suis...”).
+      detection: Champ sémantique de l'incompréhension. Arguments d'autorité disciplinaire.
     - short: Routine
       long: Faible aptitude au changement (volonté de connaissance, créativité, imagination), fonctions routinières privilégiées
-      detection: Evocation vague de difficultés à venir.
+      detection: Evocation vague de difficultés à venir. Raisons précises pour lesquelles il ne faut pas changer. Questionnement de la nécessité du changement.
     - short: Economie
       long: Raisons économiques (conséquences financières de certains changements, déménagement, achat de voiture pour se déplacer…)
-      detection:
+      detection: Champ sémantique de la rémunération ou du temps de travail.
     - short: Préjugés
       long: Attitudes, préjugés, esprit de clocher
-      detection:
+      detection: Formes négatives ou interro-négatives. Champ sémantique du conflit.
     - short: Craintes
       long: Craintes et conflits, sentiments d’insécurité, de méfiance, de jalousie, de pouvoir interpersonnel, d’intérêt personnel
-      detection:
+      detection: Champ sémantique de l'inconfort ou de la contrainte. Evocations des pertes, lutte contre des disparitions.
 - title: Carton
   slug: carton
   year: 1997
@@ -76,41 +76,44 @@
       detection: Points de détail ou sujets sans rapport avec le cœur du changement.
     - short: Argumentation
       long: "L’argumentation est la forme privilégiée de la résistance et constitue la voie royale d’accès à l’intégration du changement. Un changement non argumenté n’est pas intégré. Il s’agit de la forme la plus productive et utile de résistance. L’argumentation peut se concevoir comme une négociation sur le fond et la forme du changement. Elle obéit à un besoin naturel des individus d’influencer la réalité extérieure pour la rapprocher de sa réalité intérieure."
-      detection: Manifestation de désaccord, polémique.
+      detection: Manifestation de désaccord, ton polémique.
     - short: Révolte
       long: "La révolte survient lorsqu’il y a incapacité pour un individu d’ajuster sa réalité à la réalité du changement proposé. L’action syndicale, la demande de mutation, le recours à la hiérarchie, la grève, …, sont autant d’exemples de résistance qui prennent la forme de révolte. La révolte est toujours précédée de menace notamment dans l’argumentation. Il y a la menace tactique (menace de démission) par laquelle on tente d’influencer la représentation que l’autre se fait de la réalité et du changement qu’il propose en évoquant des conséquences qui a priori ne font pas partie de son schéma de changement. Le principe de base du changement étant de produire de façon implicite ou explicite, une amélioration, la menace à pour objet de montrer que le changement risque non pas d’améliorer mais de dégrader la situation."
+      detection: Expression claire de refus. Champ lexical agressif.
     - short: Sabotage
       long: "Le sabotage est plus pernicieux et manipulateur que la révolte. Il prend souvent la forme d’excès de zèle dont le but est de démontrer la stupidité du changement, d’embarrasser le promoteur du projet. Le sabotage est fonction de la relation hiérarchique et plus généralement du pouvoir qui lie l’individu au promoteur du changement. Il est le reflet d’une soumission apparente ou premier degré et d’une révolte au second degré."
+      detection: Absent du corpus étudié.
 - title: Collerette, Delisle & Perron 
   slug: collerette-delisle-perron
   year: 1997
   source: "Collerette, P., Delisle, G., Perron, R. (1997). Le changement organisationnel : théorie et pratiques. Sainte-Foy, Presses de l’Université du Québec."
   variables:
-    - short: Peur
-      long: Peur de l’inconnu
-      detection: Remise en cause de l'existence ou de la pertinence des nouveautés (analyse du futur avec la grille du passé).
-    - short: Perte
-      long: Crainte de perdre ce que l’on possède
-      detection: Champ lexical de la perte, de la défaite, du regret. Phrases négatives.
-    - short: Compétence
-      long: Remise en cause des compétences
-    - short: Stabilité
-      long: Préférence pour la stabilité
-      detection: Remise en cause de la pertinence globale du changement, de la nécessité de changer.
+    - short: Personnalité
+      long: Habitude, peur de l'inconnu, principe de répétition du succès, préférence pour la stabilité, perception sélective, satisfaction des besoins ou identification à la situation existante
+      detection: Phrase à la première personne. Champ sémantique de la perte.
+    - short: Système social
+      long: Conformité aux normes, cohérence du système, intérêts et droits acquis, caractère sacré de certaines choses, rejet de ce qui est étranger.
+      detection: Ellipse ou distance du locuteur (“on”, “les entreprises”, “les étudiants”). Evocation de l'institution.
+    - short: Mode d'introduction
+      long: "Résistances spécifiques liées au mode d'introduction du changement: manque de respect des personnes et des compétences, temps et moyens fournis pour s'adapter au changement, crédibilité de l'agent"
+      detection: Arguments d'autorité disciplinaire. Contestation de la nécessité ou des modalités du changement.
 - title: Oreg
   slug: oreg
   year: 2003
   source: "Oreg, S. (2003). Resistance to change: Developing an individual differences measure."
   variables:
     - short: Routine
-      long: Recherche de routine
+      long: Recherche de routine (“I’d rather be bored than surprised”)
+      detection:
     - short: Emotion
-      long: Réaction émotionnelle au changement imposé
-      detection: Champ lexical émotionnel (ennui, inquiétude...), emphase.
+      long: Réaction émotionnelle au changement imposé (“When I am informed of a change of plans, I tense up a bit”)
+      detection: Champ lexical émotionnel (ennui, inquiétude...). Emphase, ponctuation excessive.
     - short: Court-terme
-      long: Concentration sur le court terme
+      long: Concentration sur le court terme (“When someone pressures me to change something, I tend to resist it even if I think the change may ultimately benefit me”)
+      detection: Champ sémantique du temps et de l'urgence.
     - short: Rigidité
-      long: Rigidité cognitive
+      long: Rigidité cognitive (“I don’t change my mind easily”)
+      detection:
 - title: Bareil
   slug: bareil
   year: 2004

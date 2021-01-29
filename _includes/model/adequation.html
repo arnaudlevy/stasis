@@ -9,7 +9,7 @@
     {% endif %}
   {% endfor %}
 {% endfor %}
-{% assign adequation = points | times: 1.0 | divided_by: variables %}
+{% assign adequation = points | times: 1.0 | divided_by: variables | round %}
 
 <div>
   <p class="badge badge-primary text-uppercase mb-2">
