@@ -104,7 +104,7 @@
   variables:
     - short: Routine
       long: Recherche de routine (“I’d rather be bored than surprised”)
-      detection:
+      detection: Recherche des éléments du passé. Questionnement de la nécessité du changement.
     - short: Emotion
       long: Réaction émotionnelle au changement imposé (“When I am informed of a change of plans, I tense up a bit”)
       detection: Champ lexical émotionnel (ennui, inquiétude...). Emphase, ponctuation excessive.
@@ -113,7 +113,7 @@
       detection: Champ sémantique du temps et de l'urgence.
     - short: Rigidité
       long: Rigidité cognitive (“I don’t change my mind easily”)
-      detection:
+      detection: Expression d'incompréhension. Argumentation sémantique.
 - title: Bareil
   slug: bareil
   year: 2004

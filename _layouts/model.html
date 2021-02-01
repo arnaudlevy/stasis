@@ -126,7 +126,12 @@ layout: default
           {% assign values = verbatim.models[page.slug] | split: ' ' %}
           {% assign value = values[variable_index] %}
           {% if value == '1' %}
-            <li class="mb-2">{{ verbatim.title }}</li>
+            <li class="mb-2">
+              <a href="/verbatims/{{ verbatim.slug }}">
+                <span class="badge badge-secondary">{{ verbatim.slug }}</span>
+                {{ verbatim.title }}
+              </a>
+            </li>
           {% endif %}
         {% endfor %}
       </ul>
