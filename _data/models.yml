@@ -121,13 +121,19 @@
   variables:
     - short: Individu
       long: Dispositions psychologiques (traits, personnalité), préférence pour la stabilité
+      detection: Discours à la première personne. Problématiques auto-centrées, points de détail.
     - short: Collectif
       long: "Perte des droits acquis et des privilèges: temps de pause, horaires, stationnements, espaces et territoires"
+      detection: Vocabulaire diplomatique (autonomie) ou guerrier (perdant). Questions financières (heures).
     - short: Politique
       long: Pressions politiques, de personnes influentes ou pour soutenir une cause
+      detection: Prise de parole institutionnelle contre une autre institution.
     - short: Mise en œuvre
       long: Causes liées à une mise en œuvre du changement déficiente
+      detection: Questionnement de la pertinence de la méthode et de son rythme.
     - short: Système
       long: Système organisationnel inerte et peu réceptif au changement
+      detection: Références aux usages de l'institution (cours théoriques, “devenir étudiant”, méthodologie, progression pédagogique...)
     - short: Changement
       long: Complexité du changement ou absence de sens
+      detection: Champ sémantique de l'incompréhension. Propositions de retour au connu, remise en cause de la pertinence de l'inconnu.

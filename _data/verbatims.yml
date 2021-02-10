@@ -5,7 +5,7 @@
     kotter-schlesinger: 0 0 0 0
     kanter-stein-jick: 0 0 1 0 0
     brenot-tuvee: 0 0 0 0 0
-    carton: 1 2 0 0
+    carton: 1 1 0 0
     collerette-delisle-perron: 0 0 0
     oreg: 0 0 0 0
     bareil: 0 0 0 0 0 0
@@ -30,7 +30,7 @@
     carton: 0 1 0 0
     collerette-delisle-perron: 0 1 0
     oreg: 1 0 0 0
-    bareil: 1 1 0 0 1 0
+    bareil: 0 1 0 0 1 0
 - title: Ceci veut-il dire qu'il ne faut pas donner de démarche méthodologique?
   slug: 4
   models:
@@ -41,7 +41,7 @@
     carton: 0 1 0 0
     collerette-delisle-perron: 0 1 0
     oreg: 1 0 0 0
-    bareil: 1 0 0 0 0 0
+    bareil: 0 0 0 0 1 0
 - title: Construire un référentiel de compétences à partir de métiers existants n'est-il pas sclérosant alors qu'on a conscience de ne pas encore cerner les métiers de demain? quid de l'innovation, de la capacité de nos futurs diplômés à se projeter dans un contexte industriel très mouvant?
   slug: 5
   models:
@@ -85,7 +85,7 @@
     carton: 0 1 0 0
     collerette-delisle-perron: 0 1 0
     oreg: 1 0 0 0
-    bareil: 1 0 0 0 0 1
+    bareil: 0 0 0 0 0 1
 - title: Est-ce que “Piloter” ou “gérer” ne seraient pas moins ambigus?
   slug: 9
   models:
@@ -96,7 +96,7 @@
     carton: 1 1 0 0
     collerette-delisle-perron: 1 0 0
     oreg: 1 0 0 1
-    bareil: 1 0 0 0 0 1
+    bareil: 0 0 0 0 0 1
 - title: Et où va le print&nbsp;?
   slug: 10
   models:
@@ -107,7 +107,7 @@
     carton: 1 1 0 0
     collerette-delisle-perron: 1 0 0
     oreg: 1 1 0 0
-    bareil: 1 1 0 0 0 0
+    bareil: 1 0 0 0 0 0
 - title: Et ça va avec la question du niveau universitaire. Je dois y aller, mais il faudrait qu'on trouve une solution, là.
   slug: 11
   models:
@@ -118,7 +118,7 @@
     carton: 1 1 0 0
     collerette-delisle-perron: 0 1 0
     oreg: 0 1 0 0
-    bareil: 1 1 0 0 1 1
+    bareil: 0 1 0 0 1 1
 - title: Faut-il interpréter “complexe” par “multicompétence” ou par “difficile”?
   slug: 12
   models:
@@ -140,7 +140,7 @@
     carton: 1 1 0 0
     collerette-delisle-perron: 1 1 0
     oreg: 1 0 0 0
-    bareil: 1 1 0 0 0 0
+    bareil: 1 0 0 0 0 0
 - title: Il n'y a pas de communication sans information. Le problème actuel est qu'il y a de l'information sans communication.
   slug: 14
   models:
@@ -250,7 +250,7 @@
     carton: 0 1 1 0
     collerette-delisle-perron: 0 1 0
     oreg: 1 1 0 0
-    bareil: 1 1 0 0 0 1
+    bareil: 0 1 0 0 0 1
 - title: La complexité d’une SAE s’entend au niveau “étudiant” et pas forcément au niveau “enseignant”&nbsp;? Je pense que le niveau de complexité de la SAE doit être en lien avec le niveau de la compétence. 1ère année, on reste au niveau novice…
   slug: 24
   models:
@@ -283,7 +283,7 @@
     carton: 0 1 0 0
     collerette-delisle-perron: 1 0 0
     oreg: 1 0 0 0
-    bareil: 1 0 0 0 0 1
+    bareil: 0 0 0 0 0 1
 - title: "Le sens du mot n'est peut-être pas approprié dans le contexte. Selon le Larousse raconter c'est: 1. Faire oralement ou par écrit le récit d'évènements ; 2. Dire et rapporter que ; 3. Tenir des propos peu crédibles. Je suis aussi en 71."
   slug: 27
   models:
@@ -294,7 +294,7 @@
     carton: 0 1 0 0
     collerette-delisle-perron: 1 0 0
     oreg: 0 0 0 1
-    bareil: 1 0 0 0 0 1
+    bareil: 0 0 0 0 0 1
 - title: Le terme Innover me semble tout de même assez loin des métiers qui viennent d'être listés.
   slug: 28
   models:
@@ -305,7 +305,7 @@
     carton: 0 1 0 0
     collerette-delisle-perron: 1 0 0
     oreg: 0 0 0 1
-    bareil: 1 0 0 0 0 0
+    bareil: 0 0 0 0 0 1
 - title: Les entreprises ne vont pas comprendre
   slug: 29
   models:
@@ -316,7 +316,7 @@
     carton: 1 0 0 0
     collerette-delisle-perron: 0 1 0
     oreg: 0 0 0 1
-    bareil: 1 0 0 0 0 1
+    bareil: 0 0 0 0 0 1
 - title: Les étudiants ne vont pas comprendre
   slug: 30
   models:
@@ -327,7 +327,7 @@
     carton: 1 0 0 0
     collerette-delisle-perron: 0 1 0
     oreg: 0 0 0 1
-    bareil: 1 0 0 0 0 1
+    bareil: 0 0 0 0 0 1
 - title: Mais design système, est-ce que c’est le bon terme&nbsp;? Pourquoi ne pas mettre charte graphique&nbsp;? Parce qu’en anglais, parfois, le sens change
   slug: 31
   models:
@@ -349,7 +349,7 @@
     carton: 0 1 0 0
     collerette-delisle-perron: 0 1 0
     oreg: 0 1 0 1
-    bareil: 1 1 0 0 0 1
+    bareil: 0 1 0 0 0 1
 - title: Mais pourquoi on est obligés de suivre cette méthode&nbsp;?
   slug: 33
   models:
@@ -360,7 +360,7 @@
     carton: 0 1 1 0
     collerette-delisle-perron: 0 0 1
     oreg: 1 1 0 0
-    bareil: 1 0 1 0 1 1
+    bareil: 1 0 0 0 0 1
 - title: N'y a-t-il pas un risque de réduire une compétence à un cumul d'UE?
   slug: 34
   models:
@@ -382,7 +382,7 @@
     carton: 0 0 1 0
     collerette-delisle-perron: 0 1 1
     oreg: 0 1 1 0
-    bareil: 0 1 1 1 1 0
+    bareil: 0 0 1 1 1 0
 - title: Nous sommes un peu surpris que les groupes disciplinaires n'aient pas été mis en place mais nous avons peut-être loupé quelque chose?
   slug: 36
   models:
@@ -415,7 +415,7 @@
     carton: 0 1 0 0
     collerette-delisle-perron: 1 1 0
     oreg: 1 0 0 0
-    bareil: 1 0 0 0 0 1
+    bareil: 0 0 0 0 0 1
 - title: On saucissonne la note de stage en différentes notes allant alimenter les UE? Pour les industriels partenaires, le stage dans son intégrité a une importance, comment vont-ils se retrouver?
   slug: 39
   models:
@@ -426,7 +426,7 @@
     carton: 0 1 0 0
     collerette-delisle-perron: 0 1 0
     oreg: 1 0 0 0
-    bareil: 1 0 0 0 0 1
+    bareil: 0 0 0 0 0 1
 - title: Oui, je suis d'accord avec ce que dit [Prénom], c'est le sens narratif du mot qui nous ennuie et son acception ici presqu’anglo-saxonne.
   slug: 40
   models:
@@ -459,7 +459,7 @@
     carton: 0 1 0 0
     collerette-delisle-perron: 1 1 0
     oreg: 1 0 0 0
-    bareil: 1 0 0 0 1 1
+    bareil: 0 0 0 0 1 1
 - title: Où peut-on travailler le print dans ce schéma&nbsp;?
   slug: 43
   models:
@@ -492,7 +492,7 @@
     carton: 1 1 0 0
     collerette-delisle-perron: 1 1 0
     oreg: 1 0 1 0
-    bareil: 1 0 0 0 1 1
+    bareil: 0 0 0 0 1 1
 - title: Si je comprends bien, il faut comprendre comment être professionnel. La partie “universitaire” semble aller plus vers les licences classiques. On le ressent aussi dans la part de 50% de bac techno
   slug: 46
   models:
@@ -547,4 +547,4 @@
     carton: 0 1 0 0
     collerette-delisle-perron: 1 1 0
     oreg: 1 0 0 0
-    bareil: 1 0 0 0 1 1
+    bareil: 0 0 0 0 1 1

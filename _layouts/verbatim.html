@@ -7,6 +7,12 @@ layout: default
   <h1>{{page.title}}</h1>
 </header>
 
+{% include title.html title="adéquation des modèles" %}
+
+<div class="bg-light p-3">
+  {% include verbatim/adequation.html verbatim=page %}
+</div>
+
 {% include title.html title="variables présentes" %}
 
 <div class="card-columns card-columns--2 mt-5">

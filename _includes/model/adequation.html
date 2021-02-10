@@ -1,21 +1,70 @@
 {% assign slug = include.model.slug %}
-{% assign variables = include.model.variables | size %}
+{% assign variables = include.model.variables %}
+{% assign variables_size = variables | size %}
 {% assign points = 0 %}
+{% assign labels = variables | map: 'short' %}
 {% for verbatim in site.data.verbatims %}
-  {% assign values = verbatim.models[.slug] | split: ' ' %}
+  {% assign values = verbatim.models[slug] | split: ' ' %}
   {% for value in values %}
     {% if value == '1' %}
       {% assign points = points | plus: 1 %}
     {% endif %}
   {% endfor %}
 {% endfor %}
-{% assign adequation = points | times: 1.0 | divided_by: variables | round %}
+{% assign adequation = points | times: 1.0 | divided_by: variables_size | round %}
+{% assign values = '' | split: ',' %}
+{% for variable in variables %}
+  {% assign variable_index = forloop.index0 %}
+  {% assign presence = 0 %}
+  {% for verbatim in site.data.verbatims %}
+    {% assign values_for_verbatim = verbatim.models[slug] | split: ' ' %}
+    {% assign value_for_variable_for_verbatim = values_for_verbatim[variable_index] %}
+    {% if value_for_variable_for_verbatim == '1' %}
+      {% assign presence = presence | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  {% assign values = values | push: presence %}
+{% endfor %}
 
-<div>
-  <p class="badge badge-primary text-uppercase mb-2">
-    Adéquation {{ points }} • {{ adequation }}
-  </p>
-  <p class="small">
-    {{ points }} présences / {{ variables }} variables = {{ adequation }} présences / variable
-  </p>
+<div class="text-center">
+  <div>
+    <p class="badge badge-primary text-uppercase mb-2">
+      Adéquation {{ points }} • {{ adequation }}
+    </p>
+    <p class="small">
+      {{ points }} présences / {{ variables_size }} variables = {{ adequation }} présences / variable
+    </p>
+  </div>
 </div>
+
+<canvas id="chart-adequation-{{ slug }}"></canvas>
+<script>
+  window.addEventListener('load', function () {
+    new Chart('chart-adequation-{{ slug }}', {
+      type: 'radar',
+      data: {
+        labels: {{ labels | jsonify }},
+        datasets: [{
+          data: {{ values | jsonify }},
+          backgroundColor: '000000',
+          borderColor: '000000'
+        }]
+      },
+      options: {
+        responsive: true,
+        legend: {
+          display: false
+        },
+        tooltips: {
+          enabled: false
+        },
+        scale: {
+          ticks: {
+            min: 0,
+            max: {{ site.data.verbatims | size }}
+          }
+        }
+      }
+    });
+  });
+</script>

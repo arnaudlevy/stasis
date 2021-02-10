@@ -17,6 +17,9 @@ layout: default
     <h2 class="mt-1">
       <a href="/verbatims/{{verbatim.slug}}">{{ verbatim.title }}</a>
     </h2>
+    <div class="bg-light p-2">
+      {% include verbatim/adequation.html verbatim=verbatim %}
+    </div>
   </div>
 {% endfor %}
 </div>

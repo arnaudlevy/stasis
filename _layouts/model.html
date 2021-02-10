@@ -13,6 +13,12 @@ layout: default
   </div>
 </header>
 
+{% include title.html title="adéquation" %}
+
+<div class="bg-light p-3">
+  {% include model/adequation.html model=page %}
+</div>
+
 {% include title.html title="variables du modèle" %}
 
 <div class="row">
@@ -138,43 +144,6 @@ layout: default
     </div>
   </div>
 {% endfor %}
-
-{% include title.html title="adéquation" %}
-
-<canvas id="chart-adequation"></canvas>
-<script>
-  window.addEventListener('load', function () {
-    new Chart('chart-adequation', {
-      type: 'radar',
-      data: {
-        labels: {{ page.variables | map: 'short' | jsonify }},
-        datasets: [{
-          data: values,
-          backgroundColor: '000000',
-          borderColor: '000000'
-        }]
-      },
-      options: {
-        responsive: true,
-        legend: {
-          display: false
-        },
-        tooltips: {
-          enabled: false
-        },
-        scale: {
-          ticks: {
-            min: 0,
-            max: {{ site.data.verbatims | size }}
-          }
-        }
-      }
-    });
-  });
-</script>
-<div class="text-center">
-  {% include model/adequation.html model=page %}
-</div>
 
 {% include title.html title="verbatims" %}
 
